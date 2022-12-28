@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { SimulatoContainer } from "./styled";
-import girl from "../../../../assets/girSimulation.png"
+import girl from "../../../../assets/girlSimulation.png"
 
 export function Simulator() {
     const [ rangeValue, setRengeValue] = useState(20000)

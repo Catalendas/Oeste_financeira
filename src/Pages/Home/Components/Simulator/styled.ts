@@ -8,11 +8,7 @@ export const SimulatoContainer = styled.div`
     align-items: center;
     justify-content: center;
 
-    > img {
-        position: absolute;
-        margin-right: 610px;
-    }
-    
+
     > div {
         display: flex;
         flex-direction: column;        
@@ -37,7 +33,7 @@ export const SimulatoContainer = styled.div`
         height: 20rem;
 
         input[type="range"] {
-            width: 50px;
+            width: 500px;
         }
     }
 `
