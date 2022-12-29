@@ -1,5 +1,10 @@
 import styled from "styled-components";
 
+interface ButtonContainerProsp {
+    size: number
+    color: string
+}
+
 export const ButtonContainer = styled.button`
     width: 100%;
     border-radius: 1rem;

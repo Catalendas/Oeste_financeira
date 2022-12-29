@@ -1,15 +1,32 @@
 import styled from "styled-components";
 
-export const SimulatoContainer = styled.div`
+export const SimulatorContainer = styled.div`
     width: 53rem;
     height: 30rem;
-    border: 1px solid green;
+    padding: 1rem;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+`
 
+export const SimulatorTitleContainer = styled.div`
+    width: 30rem;
 
-    > div {
+    h2 {
+        font-size: 5rem;
+        color: ${({ theme }) => theme.colors["base-blue"]};
+    }
+`
+
+export const CardSimulator = styled.div`
+        display: flex;
+        align-items: center;
+`
+
+export const SimulatorContent = styled.div`
+        width: 20rem;
+        height: 20rem;
+
         display: flex;
         flex-direction: column;        
         justify-content: center;
@@ -26,14 +43,29 @@ export const SimulatoContainer = styled.div`
         }
 
         p {
-            font-weight: 700;
+            font-weight: 600;
         }
 
-        width: 20rem;
-        height: 20rem;
+        h2 {
+            border-bottom: 1px solid gray;
+            border-radius: 3px;
+        }
 
         input[type="range"] {
-            width: 500px;
+            width: 200px;
         }
-    }
+
+        > div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1.25rem;
+
+            margin-top: 3rem;
+            
+            span {
+                font-size: 2rem;
+                font-weight: 300;
+            }
+        }
 `

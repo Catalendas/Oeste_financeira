@@ -1,4 +1,4 @@
-import { CheckSquareOffset } from "phosphor-react";
+import { CheckSquareOffset, WhatsappLogo } from "phosphor-react";
 import girl from "../../../../assets/girl1.png";
 import { SimulationButton } from "../../../../components/SimulationButton";
 import { BannerContainer, BannerDescription } from "./styled";
@@ -13,7 +13,7 @@ export function Banner() {
                         <span><CheckSquareOffset/> Taxas de juros mais baixas</span>
                         <span><CheckSquareOffset/> 100% Digital</span>
                     </div>
-                    <SimulationButton />
+                    <SimulationButton icon={<WhatsappLogo size={30}/>} size={100} text="Simular Agora" color="green"/>
                 </BannerDescription>
     
                 <img src={girl}/>

@@ -1,31 +1,48 @@
 import { useState } from "react";
-import { SimulatoContainer } from "./styled";
+import { SimulatorContainer, CardSimulator, SimulatorContent, SimulatorTitleContainer} from "./styled";
 import girl from "../../../../assets/girlSimulation.png"
+import { formatedMoney } from "../../../../utils/formatedMoney";
+import { SimulationButton } from "../../../../components/SimulationButton";
 
 export function Simulator() {
-    const [ rangeValue, setRengeValue] = useState(20000)
+    const [ rangeValue, setRengeValue] = useState([2000])
     const [ loanAmount, setLoanAmont] = useState(0)
 
     function HandleSum(event: any) {
         const rangeEventValue = event.target.value
-        const LoanAmount = 0
 
-        const Total = rangeEventValue + LoanAmount  
+        const formated = formatedMoney(rangeEventValue)
 
         setRengeValue(rangeEventValue)
-        setLoanAmont(Total)
     }
 
-    return (
-        <SimulatoContainer className="container">
-            <img src={girl} />
+    console.log(rangeValue)
+    
 
-            <div>
-                De quanto você precisa?
-                <span>{rangeValue}</span> 
-                <input type="range" onChange={HandleSum} value={rangeValue} min="20000" max="100000"/>
-            </div>
+    return (
+        <SimulatorContainer className="container">
+
+            <SimulatorTitleContainer>
+                <h2>Qual o tamanho do seu sonho?</h2>
+            </SimulatorTitleContainer>            
+
+            <CardSimulator>
+                <img src={girl} />
+
+                <SimulatorContent>
+                    <p>Faça a simulação do credito consignado</p>
+                    <h2>De quanto você precisa?</h2>
+
+                   <div>         
+                        <span>R$ {rangeValue}</span> 
+                        <input type="range" onChange={HandleSum}  min="20000" max="100000"/>
+
+                   </div>
+
+                   
+                </SimulatorContent>
+            </CardSimulator>
            
-        </SimulatoContainer>
+        </SimulatorContainer>
     )
 }

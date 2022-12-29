@@ -1,10 +1,18 @@
 import { WhatsappLogo } from "phosphor-react";
+import { ReactNode } from "react";
 import { ButtonContainer } from "./style";
 
-export function SimulationButton() {
+interface SimulationButtonProps {
+    icon: ReactNode
+    text: string
+    color: string
+    size: number
+}
+
+export function SimulationButton({icon, text, color, size}: SimulationButtonProps) {
     return (
         <ButtonContainer>
-            <WhatsappLogo size={30}/>Simular Agora
+            {icon}{text}
         </ButtonContainer>
     )
 }
