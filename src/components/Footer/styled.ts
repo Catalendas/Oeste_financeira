@@ -16,6 +16,10 @@ export const FooterContent = styled.div`
     width: 100%;
     height: 30rem;
 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+
     img {
         height: 5rem;
         width: 5rem;
