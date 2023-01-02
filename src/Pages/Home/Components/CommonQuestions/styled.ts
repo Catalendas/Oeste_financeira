@@ -1,26 +1,40 @@
 import styled from "styled-components";
-import * as Accordion from '@radix-ui/react-accordion'
+import * as Accordion from "@radix-ui/react-accordion"
 
 export const CommonQuestionsContainer = styled.div`
-    background: ${({ theme }) => theme["base-blue"]};
+    background: ${({ theme }) => theme.colors["base-blue"]};
     width: 100%;
-
+    height: 40rem;
     display: flex;
-    justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-direction: column; 
+
+    h2 {
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+        color: ${({ theme }) => theme.colors["base-white"]};
+        font-size: 3rem;
+    }
+
+    > div {
+        display: flex;
+        gap: 2rem;
+    }
+`
+
+export const CommonQuestionsContent = styled.div`
+    display: flex;
+    align-items: center;
 `
 
 export const AccordionRoot = styled(Accordion.Root) `
     border-radius: 6px;
-    width: 40rem;
+    width: 30rem;
     background: ${({ theme}) => theme.colors["base-white"]};
-    box-shadow: 0 2px 10px black;
 `
 
 export const AccordionItem = styled(Accordion.Item)`
     overflow: hidden;
-    margin-top: 1px;
 
     &:first-child {
         margin-top: 0;
@@ -46,8 +60,7 @@ export const AccordionHeader = styled(Accordion.Header)`
 export const AccordionTrigger = styled(Accordion.Trigger)`
     font-family: inherit;
     background-color: transparent;
-    border: 0;
-    padding: 0 20px;
+    padding: 20px;
     height: 45;
     width: 100%;
     flex: 1;
@@ -56,32 +69,54 @@ export const AccordionTrigger = styled(Accordion.Trigger)`
     justify-content: space-between;
     font-size: 1.75rem;
     line-height: 1;
-    color: ${({ theme }) => theme.colors["base-violet"]};
-    box-shadow: 0 1px 0 black;
+    border: 0;  
     background-color: white;
-    transition: background-color 0.3s color 0.3s;
+
 
     &:hover {
         background-color: gray;
         color: ${({ theme }) => theme.colors["base-white"]};
-        
+        transition: .6s;
     }
 
-    &:checked {
-
+    &[data-state="open"] {
+        box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
+
 `
 
 export const AccordionContent = styled(Accordion.Content)`
     overflow: hidden;
     font-size: 1rem;
     color: black;
+    padding: 1rem;
 
     &[data-state="open"] {
-        animation: slideDown 300ms cubic-bezier(0.87, 0, 0.13, 1)
+        animation: slideDown 800ms ;
     }
 
     &[data-state="close"] {
-        animation: slideUp 300ms cubic-bezier(0.87, 0, 0.13, 1);
+        animation: slideUp 800ms;
     }
+
+    @keyframes slideDown {
+        from {
+            height: 0;
+        }
+
+        to {
+            height: var(--radix-accordion-content-height);
+        }
+    }
+
+    @keyframes slideUp {
+        from {
+            height: var(--radix-accordion-content-height);
+        }
+
+        to {
+            height: 0;
+        }
+    }
+
 `

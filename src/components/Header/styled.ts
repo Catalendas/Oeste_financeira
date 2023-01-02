@@ -30,5 +30,13 @@ export const HeaderLinks = styled.nav`
     li  {
         display: flex;
         gap: 0.75rem;
+        
+        ul {
+
+            &:hover {
+                color: ${({ theme }) => theme.colors["base-hover"]};
+                transition: .3s;
+            }
+        }
     }
 `
