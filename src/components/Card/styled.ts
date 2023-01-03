@@ -47,7 +47,7 @@ export const CardContent = styled.div`
 
         h2 {
             text-transform: uppercase;
-            font-size: 2.3rem;
+            font-size: 1.2rem;
             font-weight: 500;
         }
 
@@ -58,7 +58,7 @@ export const CardContent = styled.div`
         }
 
         button {
-            height: 3rem;
+            min-height: 48px;
             border-radius: 10px;
             border: 0;
         }

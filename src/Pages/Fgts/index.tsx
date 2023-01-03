@@ -1,7 +1,10 @@
 import { BannerPage, CardContainer, FgtsContainer } from "./styled";
-import FGTS from '../../assets/fgts.png'
+import Consignado from "../../assets/consignado.jpg"
+import Pessoal from "../../assets/creditoPessoal.jpg"
+import Cartao from "../../assets/cartaoConsignado.jpg"
 import { InfoCredt } from "../../components/InfoCredt";
 import { Card } from "../../components/Card";
+import { Simulator } from "../Home/Components/Simulator";
 
 export function Fgts() {
     return (
@@ -19,11 +22,25 @@ export function Fgts() {
                 <h2>Outras soluções que podem ajudar você</h2>
 
                 <div>
-                    <Card/>
-                    <Card/>
-                    <Card/>
+                    <Card 
+                        title="Crédito Consignado"
+                        description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam inventore vel molestias. Repudiandae alias consequuntur veniam nobis tenetur. Consequuntur unde similique labore nobis laboriosam accusantium corrupti sapiente quo, distinctio quis!"
+                        img={Consignado}
+                    />
+                    <Card
+                        title="Crédito Pessoal"
+                        description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam inventore vel molestias. Repudiandae alias consequuntur veniam nobis tenetur. Consequuntur unde similique labore nobis laboriosam accusantium corrupti sapiente quo, distinctio quis!"
+                        img={Pessoal}
+                    />
+                    <Card
+                        title="Cartão de Crédito Consignado"
+                        description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam inventore vel molestias. Repudiandae alias consequuntur veniam nobis tenetur. Consequuntur unde similique labore nobis laboriosam accusantium corrupti sapiente quo, distinctio quis!"
+                        img={Cartao}
+                    />
                 </div>
             </CardContainer>
+
+        <Simulator />
             
         </FgtsContainer>
     )
