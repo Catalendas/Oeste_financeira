@@ -21,27 +21,31 @@ export function Simulator() {
 
     return (
         <SimulatorContainer className="container">
+            <h2>Crédito consignado</h2>
+            
+            <div>
+                
+                <SimulatorTitleContainer>
+                    <h2>Qual o tamanho do seu sonho?</h2>
+                </SimulatorTitleContainer>            
 
-            <SimulatorTitleContainer>
-                <h2>Qual o tamanho do seu sonho?</h2>
-            </SimulatorTitleContainer>            
+                <CardSimulator>
+                    <img src={girl} />
 
-            <CardSimulator>
-                <img src={girl} />
+                    <SimulatorContent>
+                        <p>Faça a simulação do credito consignado</p>
+                        <h2>De quanto você precisa?</h2>
 
-                <SimulatorContent>
-                    <p>Faça a simulação do credito consignado</p>
-                    <h2>De quanto você precisa?</h2>
+                    <div>         
+                            <span>R$ {rangeValue}</span> 
+                            <input type="range" onChange={HandleSum}  min="20000" max="100000"/>
 
-                   <div>         
-                        <span>R$ {rangeValue}</span> 
-                        <input type="range" onChange={HandleSum}  min="20000" max="100000"/>
+                    </div>
 
-                   </div>
-
-                   
-                </SimulatorContent>
-            </CardSimulator>
+                    
+                    </SimulatorContent>
+                </CardSimulator>
+            </div>
            
         </SimulatorContainer>
     )

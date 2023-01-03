@@ -1,7 +1,7 @@
 import { BannerPage, CardContainer, FgtsContainer } from "./styled";
-import Consignado from "../../assets/consignado.png"
-import Pessoal from "../../assets/creditoPessoal.png"
-import Cartao from "../../assets/cartaoConsignado.png"
+import Fgts from "../../assets/fgts.png"
+import Pessoal from "../../assets/creditoPessoalBanner.png"
+import Cartao from "../../assets/cartaoConsignadoBanner.png"
 import { InfoCredt } from "../../components/InfoCredt";
 import { Card } from "../../components/Card";
 import { Simulator } from "../Home/Components/Simulator";
@@ -23,9 +23,9 @@ export function CreditoConsignado() {
 
                 <div>
                     <Card 
-                        title="Crédito Consignado"
+                        title="Antecipação do FGTS"
                         description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam inventore vel molestias. Repudiandae alias consequuntur veniam nobis tenetur. Consequuntur unde similique labore nobis laboriosam accusantium corrupti sapiente quo, distinctio quis!"
-                        img={Consignado}
+                        img={Fgts}
                     />
                     <Card
                         title="Crédito Pessoal"

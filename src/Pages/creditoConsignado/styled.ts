@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Fgts from '../../assets/fgts.png'
+import consignado from '../../assets/consignadoBanner.png'
 
 
 export const FgtsContainer = styled.section`
@@ -7,7 +7,7 @@ export const FgtsContainer = styled.section`
 `
 
 export const BannerPage = styled.div`
-    background: ${({ theme }) => `url(${Fgts})  no-repeat center`};
+    background: ${({ theme }) => `url(${consignado})  no-repeat center`};
     background-size: 100%;
     width: 100%;
     height: 30rem;

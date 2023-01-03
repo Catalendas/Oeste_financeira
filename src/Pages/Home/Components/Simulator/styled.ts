@@ -5,8 +5,17 @@ export const SimulatorContainer = styled.div`
     height: 30rem;
     padding: 1rem;
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
+    gap: 2rem;
+    
+
+    div {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
 `
 
 export const SimulatorTitleContainer = styled.div`
