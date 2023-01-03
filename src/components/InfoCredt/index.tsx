@@ -1,5 +1,5 @@
 import { InfoCredtContainer, InfoCredtContent, InfoCredtText } from "./styled";
-import Fgts from "../../assets/contratoFGTS.jpg"
+import Fgts from "../../assets/contratoFGTS.png"
 
 export function InfoCredt() {
     return (

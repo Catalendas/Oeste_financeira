@@ -34,13 +34,13 @@ export function Header() {
                             </NavLink>
                         </ul>
                         <ul>
-                            <NavLink to="/sobrenos">
-                                Sobre nós
+                            <NavLink to="/cartaoconsignado">
+                                Cartão de Crédito Consignado
                             </NavLink>
                         </ul>
                         <ul>
-                            <NavLink to="/cartaoconsignado">
-                                Cartão de Crédito Consignado
+                            <NavLink to="/sobrenos">
+                                Sobre nós
                             </NavLink>
                         </ul>
                     </li>

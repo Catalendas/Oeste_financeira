@@ -1,7 +1,7 @@
 import { BannerPage, CardContainer, FgtsContainer } from "./styled";
-import Consignado from "../../assets/consignado.jpg"
-import Pessoal from "../../assets/creditoPessoal.jpg"
-import Cartao from "../../assets/cartaoConsignado.jpg"
+import Consignado from "../../assets/consignado.png"
+import Pessoal from "../../assets/creditoPessoal.png"
+import Cartao from "../../assets/cartaoConsignado.png"
 import { InfoCredt } from "../../components/InfoCredt";
 import { Card } from "../../components/Card";
 import { Simulator } from "../Home/Components/Simulator";

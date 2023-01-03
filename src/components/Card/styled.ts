@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { Card } from ".";
 
 export const CardContainer = styled.div`
     width: 22.5rem;
