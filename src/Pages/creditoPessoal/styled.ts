@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Pessoal from '../../assets/creditoPessoalBanner.webp'
+import Pessoal from '../../assets/creditopessoalbanner.webp'
 
 
 export const FgtsContainer = styled.section`
