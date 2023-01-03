@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Fgts from '../../assets/fgts.png'
+import Fgts from '../../assets/fgts.webp'
 
 
 export const FgtsContainer = styled.section`

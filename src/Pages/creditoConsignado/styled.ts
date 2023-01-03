@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import consignado from '../../assets/consignadoBanner.png'
+import consignado from '../../assets/consignadoBanner.webp'
 
 
 export const FgtsContainer = styled.section`
