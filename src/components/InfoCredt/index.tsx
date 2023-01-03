@@ -16,7 +16,7 @@ export function InfoCredt() {
                     <button>Fale Conosco</button>
                 </InfoCredtText>
 
-                <img src={Fgts} alt="" />
+                <img src={Fgts}/>
             </InfoCredtContent>
 
             

@@ -18,7 +18,6 @@ export const CardContainer = styled.div`
         right: 0;
     }
 
-
 `
 
 export const CardContent = styled.div`
