@@ -1,7 +1,7 @@
 import { BannerPage, CardContainer, FgtsContainer } from "./styled";
 import Fgts from "../../assets/fgts.webp"
-import Pessoal from "../../assets/creditopessoalBanner.webp"
-import Cartao from "../../assets/cartaoconsignadoBanner.webp"
+import Pessoal from "../../assets/creditopessoalbanner.webp"
+import Cartao from "../../assets/cartaoconsignadobanner.webp"
 import { InfoCredt } from "../../components/InfoCredt";
 import { Card } from "../../components/Card";
 import { Simulator } from "../Home/Components/Simulator";
