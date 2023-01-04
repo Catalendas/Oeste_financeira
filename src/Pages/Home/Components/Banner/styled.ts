@@ -1,4 +1,5 @@
-import styled from "styled-components";
+import { backgrounds } from "polished";
+import styled, { css } from "styled-components";
 
 export const BannerContainer = styled.section`
     width: 100%;
@@ -6,17 +7,22 @@ export const BannerContainer = styled.section`
     align-items: center;
     justify-content: center;
     gap: 3rem;
-
-    margin-top: 2rem;
     
     img {
         object-fit: cover;
     }
 
+    .swiper {
+        width: 100%;
+
+    }
 `
 
-export const BannerDescription = styled.div`
-    color: gray;
+interface BannerDescriptionProps {
+    color: "gray" | "white"
+}
+
+export const BannerDescription = styled.div<BannerDescriptionProps>`
     display: flex;
     align-items: flex-start;
     gap: .75rem;
@@ -34,4 +40,22 @@ export const BannerDescription = styled.div`
         font-size: 2rem;
         line-height: 3rem;
     }
+
+    ${({ theme, color }) => color == "gray" ? css`color: gray` : css`color: white` }
 `
+
+interface SwiperContentProps {
+    img?: string
+}
+
+export const SwiperContent = styled.div<SwiperContentProps>`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30rem;
+
+    ${({ img }) => img ? css`
+        background: ${({ theme }) => `url(${img})  no-repeat `};    
+        background-size: 100%;  
+    ` : ""}
+` 

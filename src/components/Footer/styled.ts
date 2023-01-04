@@ -9,6 +9,7 @@ export const FooterContainer = styled.footer`
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 `
 
 export const FooterContent = styled.div`
@@ -26,7 +27,7 @@ export const FooterContent = styled.div`
     }
 `
 
-export const AbountContainer = styled.div`
+export const AboutContainer = styled.div`
     width: 20rem;
 
     display: flex;
