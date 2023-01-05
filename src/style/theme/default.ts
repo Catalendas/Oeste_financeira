@@ -37,10 +37,6 @@ export const DefaultTheme = {
         "text-bold-s": "0.75rem",
         "components-tag": "0.625rem",
         "components-button-g": "0.875rem",
-        "components-button-s": "0.75rem",
-    },
-
-    fonts: {
-
+        "components-button-s": "0.75rem"
     }
 } as const

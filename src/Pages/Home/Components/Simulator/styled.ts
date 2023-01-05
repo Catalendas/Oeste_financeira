@@ -9,6 +9,8 @@ export const SimulatorContainer = styled.div`
     align-items: center;
     flex-direction: column;
     gap: 2rem;
+
+    margin-bottom: 4rem;
     
 
     div {

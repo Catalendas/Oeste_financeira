@@ -32,15 +32,16 @@ export const CardContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 4rem;
 
-    margin-bottom: 10rem;
+    margin-bottom: 4rem;
 
     > h2 {
         font-size: 2rem;
+        margin-bottom: 4rem;
     }
 
     div {
-        margin-top: 3rem;
         display: flex;
         gap: 2rem;
     }

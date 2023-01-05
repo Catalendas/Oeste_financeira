@@ -38,4 +38,16 @@ a {
   text-decoration: none;
 }
 
+
+::-webkit-scrollbar {
+    width: 0.4rem;
+  }
+  ::-webkit-scrollbar-track {
+    background: #E6E5E5;
+  }
+  ::-webkit-scrollbar-thumb {
+    border-radius: 2rem;
+    background: #8047F8;
+  }
+
 `
