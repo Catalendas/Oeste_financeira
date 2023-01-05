@@ -1,5 +1,5 @@
 import { AboutContainer, AboutContent, CardContainer } from "./style";
-import Team from "../../assets/team.webp"
+import Team from "../../assets/Oeste.webp"
 import { Card } from "../Card";
 
 import Fgts from "../../assets/fgts.webp"
