@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { SimulatorContainer, CardSimulator, SimulatorContent, SimulatorTitleContainer} from "./styled";
+import { SimulatorContainer, CardSimulator, SimulatorContent, SimulatorTitleContainer, FormSimulator, OptionsContainer} from "./styled";
 import girl from "../../../../assets/girlSimulation.png"
 import { formatedMoney } from "../../../../utils/formatedMoney";
 import { SimulationButton } from "../../../../components/SimulationButton";
@@ -33,16 +33,29 @@ export function Simulator() {
                     <img src={girl} />
 
                     <SimulatorContent>
-                        <p>Faça a simulação do credito consignado</p>
-                        <h2>De quanto você precisa?</h2>
 
-                    <div>         
-                            <span>R$ {rangeValue}</span> 
-                            <input type="range" onChange={HandleSum}  min="20000" max="100000"/>
+                        <FormSimulator>
+                            
 
-                    </div>
+                            <div>         
+                                    <p>De quanto você precisa?</p>
+                                    <span>R$ {rangeValue}</span> 
+                                    <input type="range" onChange={HandleSum}  min="20000" max="100000"/>
+                            </div>
 
-                    
+                            <OptionsContainer>
+                                <button type="button">1</button>
+                                <button type="button">1</button>
+                                <button type="button">1</button>
+                                <button type="button">1</button>
+                                <button type="button">1</button>
+                                <button type="button">1</button>
+                                <button type="button">1</button>
+                                <button type="button">1</button>
+                            </OptionsContainer>
+
+                        </FormSimulator>
+                        
                     </SimulatorContent>
                 </CardSimulator>
             </div>
