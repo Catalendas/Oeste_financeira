@@ -1,4 +1,4 @@
-import { AboutContainer, AboutContent, CardContainer } from "./style";
+import { AboutContainer, AboutContent, CardContainer } from "./styled";
 import Team from "../../assets/Oeste.webp"
 import { Card } from "../Card";
 

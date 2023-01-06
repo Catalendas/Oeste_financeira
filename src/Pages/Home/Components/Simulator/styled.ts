@@ -12,18 +12,16 @@ export const SimulatorContainer = styled.div`
     gap: 2rem;
 
     margin-bottom: 4rem;
-    
+`
 
-    > div {
+export const SimulatorContent = styled.div`
         display: flex;
         align-items: center;
         justify-content: space-between;
-    }
 `
 
 export const SimulatorTitleContainer = styled.div`
     width: 30rem;
-    
 
     h2 {
         font-size: 5rem;
@@ -36,7 +34,7 @@ export const CardSimulator = styled.div`
         align-items: center;
 `
 
-export const SimulatorContent = styled.div`
+export const SimulatorCard = styled.div`
         width: 20rem;
         height: 100%;
 
@@ -51,13 +49,10 @@ export const SimulatorContent = styled.div`
         padding: 1rem;
     
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        border-radius: 1rem;
-
-       
+        border-radius: 1rem;    
 `
 
 export const FormSimulator = styled.form`
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -67,57 +62,74 @@ export const FormSimulator = styled.form`
 
     svg, p {
             color: ${({ theme }) => theme.colors["base-blue"]};
-        }
+    }
 
-        p {
-            font-weight: 600;
-        }
+    p {
+        font-weight: 600;
+    }
 
-        h2 {
-            border-radius: 3px;
-        }
+    h2 {
+        border-radius: 3px;
+    }
 
-        input[type="range"] {
-            width: 200px;
-        }
+    input[type="range"] {
+        width: 200px;
+    }
 
-        > div {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 1.25rem;
-            border-bottom: 1px solid ${({ theme }) => theme.colors["base-hover"]};
-            border-top: 1px solid ${({ theme }) => theme.colors["base-hover"]};
-            padding: 1rem;
-            
-            span {
-                font-size: 2rem;
-                font-weight: 300;
-            }
+    > section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.25rem;
+        border-bottom: 1px solid ${({ theme }) => theme.colors["base-hover"]};
+        padding: 1rem;
+        
+        span {
+            font-size: 2rem;
+            font-weight: 300;
         }
+    }
 `
 
 export const OptionsContainer = styled(RadioGroup.Root)`
-    
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 1rem;
 `
 
 export const OptionsButton = styled(RadioGroup.Item)`
+    border: 1px solid;
+    color: ${({theme}) => theme.colors["base-blue"]};
+    border-radius: 6px;
+    padding: .3rem;
 
-    color: orange;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     background: ${({ theme }) => theme["gray-700"]};
-    border: 0;
 
     &[data-state="unchecked"]:hover {
         transition: background-color 0.2s;
-        background: ${({ theme }) => theme["gray-600"]};
+        background: ${({theme}) => theme.colors["base-blue"]};
+        color: ${({ theme }) => theme.colors["base-white"]};
     }
 
     &[data-state="checked"] {
-        color: ${({ theme }) => theme["white"]};
-        background: ${({ theme }) =>  theme["green-500"] };
+        color: ${({ theme }) => theme.colors["base-white"]};
+        background: ${({theme}) => theme.colors["base-blue"]};
+    }
+`
 
+export const Results = styled.div`
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    font-size: .75rem;
+    text-align: center;
+
+    p {
+        font-size: 2rem;
     }
 `

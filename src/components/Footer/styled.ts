@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const FooterContainer = styled.footer`
     width: 100%;
     height: 100%;
-    background-color: ${({ theme }) => theme.colors["base-blue-dark"]};
+    background-color: ${({ theme }) => theme.colors["base-blue-black"]};
     color: ${({ theme }) => theme.colors["base-white"]};
 
     display: flex;

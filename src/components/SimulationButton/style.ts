@@ -1,11 +1,11 @@
 import styled from "styled-components";
 
 interface ButtonContainerProsp {
-    size: number
-    color: string
+    size?: number
+    color?: string
 }
 
-export const ButtonContainer = styled.button`
+export const ButtonContainer = styled.button<ButtonContainerProsp>`
     width: 100%;
     border-radius: 1rem;
     height: 3rem;
@@ -13,7 +13,7 @@ export const ButtonContainer = styled.button`
 
     font-weight: bold;
 
-    background: ${({ theme }) => theme.colors["base-green"]};
+    background: ${({ theme, color }) => theme.colors[`base-${color}`]};
     color: ${({ theme }) => theme.colors["base-white"]};
     transition: .4s;
 
@@ -24,6 +24,6 @@ export const ButtonContainer = styled.button`
 
 
     &:hover {
-        background: ${({ theme }) => theme.colors["base-green-black"]};
+        background: ${({ theme, color }) => theme.colors[`base-${color}-black`]};
     }
 `
