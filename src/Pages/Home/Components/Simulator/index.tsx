@@ -1,7 +1,7 @@
 import { useState } from "react";
-import { SimulatorContainer, CardSimulator, SimulatorContent, SimulatorTitleContainer, FormSimulator, OptionsContainer} from "./styled";
+import { SimulatorContainer, CardSimulator, SimulatorContent, SimulatorTitleContainer, FormSimulator, OptionsContainer, OptionsButton} from "./styled";
 import girl from "../../../../assets/girlSimulation.png"
-import { formatedMoney } from "../../../../utils/formatedMoney";
+import { priceFormatter } from "../../../../utils/formatedMoney";
 import { SimulationButton } from "../../../../components/SimulationButton";
 
 export function Simulator() {
@@ -11,7 +11,6 @@ export function Simulator() {
     function HandleSum(event: any) {
         const rangeEventValue = event.target.value
 
-        const formated = formatedMoney(rangeEventValue)
 
         setRengeValue(rangeEventValue)
     }
@@ -39,19 +38,19 @@ export function Simulator() {
 
                             <div>         
                                     <p>De quanto você precisa?</p>
-                                    <span>R$ {rangeValue}</span> 
+                                    <span>{priceFormatter.format( Number(rangeValue))}</span> 
                                     <input type="range" onChange={HandleSum}  min="20000" max="100000"/>
                             </div>
 
                             <OptionsContainer>
-                                <button type="button">1</button>
-                                <button type="button">1</button>
-                                <button type="button">1</button>
-                                <button type="button">1</button>
-                                <button type="button">1</button>
-                                <button type="button">1</button>
-                                <button type="button">1</button>
-                                <button type="button">1</button>
+                                <OptionsButton value="1">1</OptionsButton>
+                                <OptionsButton value="1">1</OptionsButton>
+                                <OptionsButton value="1">1</OptionsButton>
+                                <OptionsButton value="1">1</OptionsButton>
+                                <OptionsButton value="1">1</OptionsButton>
+                                <OptionsButton value="1">1</OptionsButton>
+                                <OptionsButton value="1">1</OptionsButton>
+                                <OptionsButton value="1">1</OptionsButton>
                             </OptionsContainer>
 
                         </FormSimulator>

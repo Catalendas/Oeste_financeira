@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import * as RadioGroup from "@radix-ui/react-radio-group"
 
 export const SimulatorContainer = styled.div`
     width: 53rem;
@@ -96,11 +97,27 @@ export const FormSimulator = styled.form`
         }
 `
 
-export const OptionsContainer = styled.section`
+export const OptionsContainer = styled(RadioGroup.Root)`
     
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-
-    border: 1px solid;
     grid-gap: 1rem;
+`
+
+export const OptionsButton = styled(RadioGroup.Item)`
+
+    color: orange;
+    background: ${({ theme }) => theme["gray-700"]};
+    border: 0;
+
+    &[data-state="unchecked"]:hover {
+        transition: background-color 0.2s;
+        background: ${({ theme }) => theme["gray-600"]};
+    }
+
+    &[data-state="checked"] {
+        color: ${({ theme }) => theme["white"]};
+        background: ${({ theme }) =>  theme["green-500"] };
+
+    }
 `
