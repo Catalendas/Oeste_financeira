@@ -9,6 +9,7 @@ export const CommonQuestionsContainer = styled.div`
     align-items: center;
     flex-direction: column; 
 
+
     h2 {
         margin-bottom: 2rem;
         margin-top: 2rem;
@@ -25,12 +26,28 @@ export const CommonQuestionsContainer = styled.div`
 export const CommonQuestionsContent = styled.div`
     display: flex;
     align-items: center;
+
+
+    @media(max-width: 520px){
+        width: 100%;
+
+        div {
+            img {
+                display: none;
+            }
+        }
+    }
 `
 
 export const AccordionRoot = styled(Accordion.Root) `
+    border: 1px solid green;
     border-radius: 6px;
     width: 30rem;
     background: ${({ theme}) => theme.colors["base-white"]};
+
+    @media(max-width: 520px) {
+        width: 100%;
+    }
 `
 
 export const AccordionItem = styled(Accordion.Item)`

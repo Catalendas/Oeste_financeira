@@ -15,6 +15,17 @@ export const HowItWorksContainer = styled.section`
         justify-content: flex-end;
    }
 
+   @media(max-width: 520px) {
+
+        width: 360px;
+         div {
+
+            img {
+                display: none;
+            }
+         }
+   }
+
 `
 
 export const Description = styled.div`
@@ -29,7 +40,7 @@ export const Description = styled.div`
 
         span {
             font-size: 1.5rem;
-            color: ${({ theme }) => theme.colors["base-blue-dark"]};
+            color: ${({ theme }) => theme.colors["base-blue-black"]};
             margin-bottom: 1rem;
         }
 `
@@ -46,7 +57,7 @@ export const IntructionContainer = styled.div`
         min-width: 120px;
         border-radius: 50%;
 
-        background: ${({ theme }) => theme.colors["base-blue-dark"]};
+        background: ${({ theme }) => theme.colors["base-blue-black"]};
         color: ${({ theme }) => theme.colors["base-white"]};
 
         display: flex;
@@ -71,5 +82,15 @@ export const IntructionContainer = styled.div`
 
    & + div {
     margin-top: 2rem    ;
+   }
+
+   @media(max-width: 520px) {
+        padding: 1rem;
+
+        span {
+            height: 70px;
+            min-width: 66px;
+            font-size: 3rem;
+        }
    }
 `

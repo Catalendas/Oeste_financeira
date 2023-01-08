@@ -4,6 +4,7 @@ export const HeaderContainer = styled.header`
     width: 100%;
     height: 6.5rem;
     background: ${({ theme }) => theme.colors["base-blue"]};
+    
 
     display: flex;
     align-items: center;
@@ -38,5 +39,9 @@ export const HeaderLinks = styled.nav`
                 transition: .3s;
             }
         }
+    }
+
+    @media(max-width: 520px) {
+        display: none;
     }
 `

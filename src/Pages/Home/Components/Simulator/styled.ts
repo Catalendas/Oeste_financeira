@@ -2,7 +2,7 @@ import styled from "styled-components";
 import * as RadioGroup from "@radix-ui/react-radio-group"
 
 export const SimulatorContainer = styled.div`
-    width: 53rem;
+    width: 100%;
     height: 30rem;
     padding: 1rem;
     display: flex;
@@ -11,13 +11,22 @@ export const SimulatorContainer = styled.div`
     flex-direction: column;
     gap: 2rem;
 
+
     margin-bottom: 4rem;
+
+    @media(max-width: 520px) {
+        height: 50rem;
+    }
 `
 
 export const SimulatorContent = styled.div`
         display: flex;
         align-items: center;
         justify-content: space-between;
+
+        @media(max-width: 520px) {
+            flex-direction: column;
+        }
 `
 
 export const SimulatorTitleContainer = styled.div`
@@ -32,6 +41,12 @@ export const SimulatorTitleContainer = styled.div`
 export const CardSimulator = styled.div`
         display: flex;
         align-items: center;
+
+        @media(max-width: 520px) {
+            img {
+                display: none;
+            }
+        }
 `
 
 export const SimulatorCard = styled.div`

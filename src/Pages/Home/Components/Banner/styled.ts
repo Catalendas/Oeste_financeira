@@ -14,7 +14,17 @@ export const BannerContainer = styled.section`
 
     .swiper {
         width: 100%;
+    }
 
+    @media(max-width: 520px) {
+        img {
+            display: none;
+        }
+
+        .swiper {
+            width: 360px;
+            height: 20rem;
+        }
     }
 `
 
@@ -41,7 +51,20 @@ export const BannerDescription = styled.div<BannerDescriptionProps>`
         line-height: 3rem;
     }
 
-    ${({ theme, color }) => color == "gray" ? css`color: gray` : css`color: white` }
+    ${({ theme, color }) => color == "gray" ? css`color: gray;` : css`color: white;` }
+
+    @media(max-width: 520px) {
+        width: 20rem;
+
+        h1 {
+            font-size: 2.5rem
+        }
+
+        div {
+            font-size: 1.5rem;
+            line-height: 1.5rem;
+        }
+    }
 `
 
 interface SwiperContentProps {
@@ -58,4 +81,8 @@ export const SwiperContent = styled.div<SwiperContentProps>`
         background: ${({ theme }) => `url(${img})  no-repeat `};    
         background-size: 100%;  
     ` : ""}
+
+    @media(max-width: 520px) {
+        height: 20rem;
+    }
 ` 

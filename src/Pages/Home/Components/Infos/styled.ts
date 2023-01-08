@@ -16,6 +16,16 @@ export const InfoConteiner = styled.div`
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 1rem;
     }
+
+    @media(max-width: 520px) {
+    
+        padding: 1rem;
+        width: 360px;
+
+        > div {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
 `
 
 export const TitleContent = styled.h2`

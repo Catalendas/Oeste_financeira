@@ -7,4 +7,5 @@ export const HomeContainer = styled.div`
     justify-content: center;
     flex-direction: column;
     gap: 0.75rem;
+    border: 1px solid red;
 `

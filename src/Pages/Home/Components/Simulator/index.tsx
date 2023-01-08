@@ -26,7 +26,9 @@ export function Simulator() {
         setRengeValue(rangeEventValue)
     }
 
-    console.log(rangeValue)
+    function handlePlus(event: any) {
+        console.log(event)
+    }
     
 
     return (
@@ -54,10 +56,10 @@ export function Simulator() {
                             </section>
 
                             <OptionsContainer>
-                                <OptionsButton value="0.097">12</OptionsButton>
-                                <OptionsButton value="0.054">24</OptionsButton>
-                                <OptionsButton value="0.042">36</OptionsButton>
-                                <OptionsButton value="0.035">48</OptionsButton>
+                                <OptionsButton value="0.097" onClick={handlePlus}>12</OptionsButton>
+                                <OptionsButton value="0.054" onClick={handlePlus}>24</OptionsButton>
+                                <OptionsButton value="0.042" onClick={handlePlus}>36</OptionsButton>
+                                <OptionsButton value="0.035" onClick={handlePlus}>48</OptionsButton>
                                 <OptionsButton value="0.031">60</OptionsButton>
                                 <OptionsButton value="0.028">72</OptionsButton>
                                 <OptionsButton value="0.027">84</OptionsButton>

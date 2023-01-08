@@ -38,4 +38,8 @@ export const AboutContainer = styled.div`
 export const InfoAboutContainer = styled.div`
     display: flex;
     gap: .75rem;
+
+    @media(max-width: 520px) {
+        display: none;
+    }
 `
