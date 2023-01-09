@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const InfoConteiner = styled.div`
-    width: 100%;
+    
     margin-top: 5rem;
     margin-bottom: 5rem;
 

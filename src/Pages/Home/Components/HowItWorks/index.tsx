@@ -4,7 +4,7 @@ import { Instruction } from "./Instruction";
 
 export function HowItWorks(){
     return (
-        <HowItWorksContainer>
+        <HowItWorksContainer >
             <div className="container">
                 <img src={GirlEngine} />
 

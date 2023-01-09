@@ -2,7 +2,9 @@ import styled from "styled-components";
 import * as RadioGroup from "@radix-ui/react-radio-group"
 
 export const SimulatorContainer = styled.div`
-    width: 100%;
+        
+
+
     height: 30rem;
     padding: 1rem;
     display: flex;

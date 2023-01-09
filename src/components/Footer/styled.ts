@@ -25,6 +25,14 @@ export const FooterContent = styled.div`
         height: 5rem;
         width: 5rem;
     }
+
+    @media(max-width: 520px) {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
 `
 
 export const AboutContainer = styled.div`
@@ -33,13 +41,19 @@ export const AboutContainer = styled.div`
     display: flex;
     flex-direction: column;
     gap: 2rem;
+
+    border: 1px solid green;
+
+    @media(max-width: 520px) {
+        & + div {
+            margin-bottom: 2rem;
+        }
+    }
 `
 
 export const InfoAboutContainer = styled.div`
     display: flex;
     gap: .75rem;
 
-    @media(max-width: 520px) {
-        display: none;
-    }
+    
 `
