@@ -1,4 +1,4 @@
-import { BannerPage, CardContainer, FgtsContainer } from "./styled";
+import { BannerPage, CardContainer, CreditoPessoalContainer } from "./styled";
 import Fgts from "../../assets/fgts.webp"
 import Consignado from "../../assets/consignadobanner.webp"
 import Cartao from "../../assets/cartaoconsignadobanner.webp"
@@ -8,7 +8,7 @@ import { Simulator } from "../../components/Simulator";
 
 export function CreditoPessoal() {
     return (
-        <FgtsContainer>
+        <CreditoPessoalContainer>
             <BannerPage>   
                 <h2>Credito Pessoal</h2>
                 <span>No memos dia em sua conta</span>
@@ -42,6 +42,6 @@ export function CreditoPessoal() {
 
         <Simulator />
             
-        </FgtsContainer>
+        </CreditoPessoalContainer>
     )
 }

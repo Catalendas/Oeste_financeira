@@ -16,6 +16,15 @@ export const InfoCredtContent = styled.div`
         object-fit: cover;
         border-radius: 6px 36px 6px 36px;
     }
+
+    @media(max-width: 520px) {
+        align-items: center;
+        justify-content: center;
+        
+        img {
+            display: none;
+        }
+    }
 `
 
 export const InfoCredtText = styled.div`
@@ -38,6 +47,10 @@ export const InfoCredtText = styled.div`
             background-color: ${({ theme }) => theme.colors["base-blue-dark"]};
             transition: .5s;
         }
+    }
+
+    @media(max-width: 520px) {
+
     }
 `
 
