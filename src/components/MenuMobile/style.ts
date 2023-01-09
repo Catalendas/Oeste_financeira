@@ -24,7 +24,7 @@ export const Container = styled.section<ContainerProps>`
     opacity: 0;
     pointer-events: none;
 
-    transition: .5s;
+    transition: .2s;
     transform: translateY(50px);
 
     
@@ -58,7 +58,7 @@ export const MenuMobileLinks = styled.nav<ContainerProps>`
     align-items: center;
     justify-content: center;
     transform: scale(0.7);
-    transition: .7s;
+    transition: .4s;
     
 
     li {

@@ -5,12 +5,8 @@ export const HeaderContainer = styled.header`
     height: 6.5rem;
     background: ${({ theme }) => theme.colors["base-blue"]};
     
-
     display: flex;
     align-items: center;
-    position: sticky;
-    top: 0;
-    z-index: 2;
 
     font-weight: bold;
     color: ${({ theme }) => theme.colors["base-white"]};
