@@ -8,6 +8,9 @@ export const HeaderContainer = styled.header`
 
     display: flex;
     align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 2;
 
     font-weight: bold;
     color: ${({ theme }) => theme.colors["base-white"]};
@@ -30,6 +33,7 @@ export const HeaderContainer = styled.header`
         }
         
     }
+
 
     @media(max-width: 520px) {
         div {
