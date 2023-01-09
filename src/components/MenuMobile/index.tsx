@@ -22,32 +22,32 @@ export function MenuBobile({menuIsVisible, setMenuIsVisible}: MenuMobileProps) {
             <MenuMobileLinks isVisible={menuIsVisible}>
                     <li>
                         <ul>
-                            <NavLink to="/">
+                            <NavLink to="/" onClick={() => setMenuIsVisible(false)}>
                                 Inicio
                             </NavLink>
                         </ul>
                         <ul>
-                            <NavLink to="/fgts">
+                            <NavLink to="/fgts" onClick={() => setMenuIsVisible(false)}>
                                 FGTS
                             </NavLink>
                         </ul>
                         <ul>
-                            <NavLink to="/creditoconsignado">
+                            <NavLink to="/creditoconsignado" onClick={() => setMenuIsVisible(false)}>
                                 Crédito consignado
                             </NavLink>
                         </ul>
                         <ul>
-                        <NavLink to="/creditopessoal">
+                        <NavLink to="/creditopessoal" onClick={() => setMenuIsVisible(false)}>
                                 Crédito Pessoal
                             </NavLink>
                         </ul>
                         <ul>
-                            <NavLink to="/cartaoconsignado">
+                            <NavLink to="/cartaoconsignado" onClick={() => setMenuIsVisible(false)}>
                                 Cartão de Crédito Consignado
                             </NavLink>
                         </ul>
                         <ul>
-                            <NavLink to="/sobrenos">
+                            <NavLink to="/sobrenos" onClick={() => setMenuIsVisible(false)}>
                                 Sobre nós
                             </NavLink>
                         </ul>
