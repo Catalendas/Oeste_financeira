@@ -13,8 +13,7 @@ export function Fgts() {
                 <h2>Antecipação do FGTS</h2>
                 <span>No memos dia em sua conta</span>
             </BannerPage>
-
-
+            
             <InfoCredt/>
             
 

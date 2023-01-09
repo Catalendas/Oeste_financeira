@@ -52,7 +52,7 @@ export function Simulator() {
                             <section>         
                                     <p>De quanto você precisa?</p>
                                     <span>{priceFormatter.format( Number(rangeValue))}</span> 
-                                    <input type="range" onChange={HandleSum}  min="20000" max="100000"/>
+                                    <input type="range" onChange={HandleSum}  min="2000" max="30000"/>
                             </section>
 
                             <OptionsContainer>
