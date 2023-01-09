@@ -7,7 +7,7 @@ import { DefaultLayoutContainer } from "./styled";
 
 export function Defautllayout() {
 
-    const [menuIsVisible, setMenuIsVisible] = useState(true)
+    const [menuIsVisible, setMenuIsVisible] = useState(false)
 
     return (
         <DefaultLayoutContainer>
