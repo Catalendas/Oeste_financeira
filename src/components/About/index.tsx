@@ -5,7 +5,7 @@ import { Card } from "../Card";
 import Fgts from "../../assets/fgts.webp"
 import Pessoal from "../../assets/creditopessoalbanner.webp"
 import Cartao from "../../assets/cartaoconsignadobanner.webp"
-import { Simulator } from "../../Pages/Home/Components/Simulator";
+import { Simulator } from "../Simulator";
 
 export function About() {
     return (

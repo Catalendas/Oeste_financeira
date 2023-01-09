@@ -23,7 +23,22 @@ export const HeaderContainer = styled.header`
         img {
             width: 5rem;
             height: 5rem;
-        }        
+        }       
+
+        svg {
+            display: none;
+        }
+        
+    }
+
+    @media(max-width: 520px) {
+        div {
+            padding: 0 2rem 0 0;
+
+            > svg {
+                display: block;
+            }
+        }
     }
 `
 

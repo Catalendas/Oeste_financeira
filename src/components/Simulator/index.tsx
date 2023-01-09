@@ -10,9 +10,9 @@ import {
     SimulatorContent,
     Results
 } from "./styled";
-import girl from "../../../../assets/girlSimulation.png"
-import { priceFormatter } from "../../../../utils/formatedMoney";
-import { SimulationButton } from "../../../../components/SimulationButton";
+import girl from "../../assets/girlSimulation.png"
+import { priceFormatter } from "../../utils/formatedMoney";
+import { SimulationButton } from "../SimulationButton";
 import React from "react";
 
 export function Simulator() {

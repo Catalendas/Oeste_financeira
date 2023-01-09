@@ -1,22 +1,25 @@
-import { HeaderContainer, HeaderLinks } from "./styled";
-import Logo from "../../assets/logo.png"
-import { NavLink } from "react-router-dom";
-import { TextAlignRight } from "phosphor-react";
+import { XCircle } from 'phosphor-react'
+import { useEffect } from 'react'
+import { NavLink } from 'react-router-dom'
+import { Container, MenuMobileLinks } from './style'
 
-interface HeaderProps {
+interface MenuMobileProps {
+    menuIsVisible: boolean
     setMenuIsVisible: (state:boolean) => void
 }
 
-export function Header({ setMenuIsVisible }: HeaderProps) {
+export function MenuBobile({menuIsVisible, setMenuIsVisible}: MenuMobileProps) {
+    
+    useEffect(() => {
+        document.body.style.overflowY = menuIsVisible ? "hidden" : "auto"
+    }, [menuIsVisible])
+    
     return (
-        <HeaderContainer >
-            <div className="container">
-                <div>
-                    <img src={Logo}/>
-                    <span>Oeste Financeira</span>
-                </div>
+        <Container isVisible={menuIsVisible}>
 
-                <HeaderLinks>
+            <XCircle size={45} onClick={() => setMenuIsVisible(false)}/>
+
+            <MenuMobileLinks isVisible={menuIsVisible}>
                     <li>
                         <ul>
                             <NavLink to="/">
@@ -49,10 +52,7 @@ export function Header({ setMenuIsVisible }: HeaderProps) {
                             </NavLink>
                         </ul>
                     </li>
-                </HeaderLinks>
-
-                <TextAlignRight size={50} onClick={() => setMenuIsVisible(true)}/>
-            </div>
-        </HeaderContainer>
+                </MenuMobileLinks>
+        </Container>
     )
 }
