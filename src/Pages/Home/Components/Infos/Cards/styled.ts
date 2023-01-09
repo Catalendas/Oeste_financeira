@@ -23,4 +23,8 @@ export const CardContainerr = styled.div`
     p {
         font-weight: 700;
     }
+
+    @media(max-width: 520px) {
+        width: 100%;
+    }
 `

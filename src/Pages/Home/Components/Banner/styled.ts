@@ -22,7 +22,7 @@ export const BannerContainer = styled.section`
         }
 
         .swiper {
-            width: 360px;
+            width: 100%;
             height: 20rem;
         }
     }

@@ -20,7 +20,8 @@ export const InfoConteiner = styled.div`
     @media(max-width: 520px) {
     
         padding: 1rem;
-        width: 360px;
+        width: 100%;
+        justify-content: center;
 
         > div {
             grid-template-columns: repeat(1, 1fr);
@@ -31,4 +32,8 @@ export const InfoConteiner = styled.div`
 export const TitleContent = styled.h2`
     height: 5rem;
     font-size: 2rem;
+
+    @media(max-width: 520px) {
+        text-align: center;
+    }
 `

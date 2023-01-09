@@ -17,19 +17,26 @@ export const CommonQuestionsContainer = styled.div`
         font-size: 3rem;
     }
 
-    > div {
-        display: flex;
-        gap: 2rem;
+
+    @media(max-width: 520px) {
+        justify-content: center;
+        h2 {
+            font-size: 2rem;
+        }
+
     }
 `
 
 export const CommonQuestionsContent = styled.div`
     display: flex;
     align-items: center;
+    justify-content: center;
+    gap: 2rem;
 
 
     @media(max-width: 520px){
         width: 100%;
+        gap: 0;
 
         div {
             img {
@@ -40,13 +47,12 @@ export const CommonQuestionsContent = styled.div`
 `
 
 export const AccordionRoot = styled(Accordion.Root) `
-    border: 1px solid green;
     border-radius: 6px;
     width: 30rem;
     background: ${({ theme}) => theme.colors["base-white"]};
 
     @media(max-width: 520px) {
-        width: 100%;
+        width: 20rem;
     }
 `
 

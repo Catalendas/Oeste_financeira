@@ -42,8 +42,6 @@ export const AboutContainer = styled.div`
     flex-direction: column;
     gap: 2rem;
 
-    border: 1px solid green;
-
     @media(max-width: 520px) {
         & + div {
             margin-bottom: 2rem;

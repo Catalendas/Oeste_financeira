@@ -1,10 +1,7 @@
 import styled from "styled-components";
 import * as RadioGroup from "@radix-ui/react-radio-group"
 
-export const SimulatorContainer = styled.div`
-        
-
-
+export const SimulatorContainer = styled.div`    
     height: 30rem;
     padding: 1rem;
     display: flex;
@@ -16,9 +13,15 @@ export const SimulatorContainer = styled.div`
 
     margin-bottom: 4rem;
 
+    h2 {
+        margin-top: 2rem;
+    }
+
     @media(max-width: 520px) {
         height: 50rem;
     }
+
+    
 `
 
 export const SimulatorContent = styled.div`
@@ -37,6 +40,16 @@ export const SimulatorTitleContainer = styled.div`
     h2 {
         font-size: 5rem;
         color: ${({ theme }) => theme.colors["base-blue"]};
+    }
+
+    @media(max-width: 520px) {
+        width: 20rem;
+        text-align: center;
+        margin-bottom: 2rem;
+
+        h2 {
+            font-size: 2rem;
+        }
     }
 `
 

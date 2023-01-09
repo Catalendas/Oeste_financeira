@@ -17,7 +17,7 @@ export const HowItWorksContainer = styled.section`
 
    @media(max-width: 520px) {
 
-        width: 360px;
+        width: 100%;
          div {
 
             img {
@@ -42,6 +42,11 @@ export const Description = styled.div`
             font-size: 1.5rem;
             color: ${({ theme }) => theme.colors["base-blue-black"]};
             margin-bottom: 1rem;
+        }
+
+        @media(max-width: 520px) {
+            justify-content: center;
+            align-items: center;
         }
 `
 
