@@ -1,11 +1,11 @@
 import { AboutContainer, AboutContent, CardContainer } from "./styled";
 import Team from "../../assets/Oeste.webp"
-import { Card } from "../Card";
+import { Card } from "../../components/Card";
 
 import Fgts from "../../assets/fgts.webp"
 import Pessoal from "../../assets/creditopessoalbanner.webp"
 import Cartao from "../../assets/cartaoconsignadobanner.webp"
-import { Simulator } from "../Simulator";
+import { Simulator } from "../../components/Simulator";
 
 export function About() {
     return (
