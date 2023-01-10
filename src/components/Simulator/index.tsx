@@ -13,11 +13,10 @@ import {
 import girl from "../../assets/girlSimulation.png"
 import { priceFormatter } from "../../utils/formatedMoney";
 import { SimulationButton } from "../SimulationButton";
-import React from "react";
 
 export function Simulator() {
     const [ rangeValue, setRengeValue] = useState([2000])
-    const [ loanAmount, setLoanAmont] = useState(0)
+    const [ ratePrice, setRatePrice] = useState(0)
 
     function HandleSum(event: any) {
         const rangeEventValue = event.target.value
@@ -27,8 +26,13 @@ export function Simulator() {
     }
 
     function handlePlus(event: any) {
-        console.log(event)
+        const radioValue = event.target.value
+
+        const results = Number(rangeValue) * radioValue
+
+        setRatePrice(results)
     }
+
     
 
     return (
@@ -48,7 +52,6 @@ export function Simulator() {
 
                         <FormSimulator>
                             
-
                             <section>         
                                     <p>De quanto você precisa?</p>
                                     <span>{priceFormatter.format( Number(rangeValue))}</span> 
@@ -60,19 +63,19 @@ export function Simulator() {
                                 <OptionsButton value="0.054" onClick={handlePlus}>24</OptionsButton>
                                 <OptionsButton value="0.042" onClick={handlePlus}>36</OptionsButton>
                                 <OptionsButton value="0.035" onClick={handlePlus}>48</OptionsButton>
-                                <OptionsButton value="0.031">60</OptionsButton>
-                                <OptionsButton value="0.028">72</OptionsButton>
-                                <OptionsButton value="0.027">84</OptionsButton>
-                                <OptionsButton value="0.026">96</OptionsButton>
+                                <OptionsButton value="0.031" onClick={handlePlus}>60</OptionsButton>
+                                <OptionsButton value="0.028" onClick={handlePlus}>72</OptionsButton>
+                                <OptionsButton value="0.027" onClick={handlePlus}>84</OptionsButton>
+                                <OptionsButton value="0.026" onClick={handlePlus}>96</OptionsButton>
                             </OptionsContainer>
 
                             <Results>
                                 <span>Valor aprocimado da parcela/mês</span>
-                                <p>R$ 114,00</p>
+                                <p>{priceFormatter.format( Number(ratePrice))}</p>
                                 <span>Os valores podem variar de acordo com o convênio</span>
                             </Results>
 
-                            <SimulationButton text="Simular agora" color="blue"/>
+                            <SimulationButton  text="Simular agora" color="blue"/>
 
                         </FormSimulator>
                         
