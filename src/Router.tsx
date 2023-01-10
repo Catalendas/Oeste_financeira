@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router-dom";
-import { About } from "./components/About";
+import { About } from "./Pages/About";
 import { Defautllayout } from "./layouts/DefautlLayout";
 import { CartaoConsignado } from "./Pages/cartaoConsignado";
 import { CreditoConsignado } from "./Pages/creditoConsignado";

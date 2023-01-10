@@ -2,7 +2,7 @@ import styled from "styled-components";
 import consignado from '../../assets/consignadobanner.webp'
 
 
-export const FgtsContainer = styled.section`
+export const CreditoConsignadoContainer = styled.section`
     width: 100%;
 `
 
@@ -24,7 +24,10 @@ export const BannerPage = styled.div`
         font-size: 3rem;
     }
 
-  
+    @media(max-width: 520px) {
+        background-size: cover;
+        text-align: center;
+    }
 `
 
 export const CardContainer = styled.div`
@@ -45,5 +48,17 @@ export const CardContainer = styled.div`
     div {
         display: flex;
         gap: 2rem;
+    }
+
+    @media(max-width: 520px) {
+
+        > h2 {
+            font-size: 1.5rem;
+            text-align: center;
+        }
+
+        div {
+            flex-direction: column;
+        }
     }
 `

@@ -61,6 +61,10 @@ export const CardContent = styled.div`
             border: 0;
         }
 
-        
+        @media(max-width: 520px) {
+            right: 0;
+            background: rgba(0, 255, 255, 0.2);
+            backdrop-filter: blur(2px);
+        }
 `
 

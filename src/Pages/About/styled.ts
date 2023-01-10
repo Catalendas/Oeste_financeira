@@ -26,6 +26,17 @@ export const CardContainer = styled.div`
         display: flex;
         gap: 2rem;
     }
+
+    @media(max-width: 520px) {
+
+        > h2 {
+            text-align: center;
+        }
+
+        div {
+            flex-direction: column;
+        }
+    }
 `
 
 
@@ -51,6 +62,20 @@ export const AboutContent = styled.div`
     img {
         width: 30rem;
         height: 100%;
+        border-radius: 6px 30px 6px 30px;
     }
 
+    @media(max-width: 520px) {
+        flex-direction: column;
+        align-items: center;
+
+        img {
+            width: 23rem;
+        }
+
+        div {
+            align-items: center;
+            justify-content: center;
+        }
+    }
 `
