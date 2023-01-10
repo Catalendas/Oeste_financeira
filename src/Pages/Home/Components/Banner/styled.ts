@@ -1,4 +1,3 @@
-import { backgrounds } from "polished";
 import styled, { css } from "styled-components";
 
 export const BannerContainer = styled.section`

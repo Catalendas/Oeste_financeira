@@ -8,7 +8,7 @@ export function Footer() {
         <FooterContainer >
             <FooterContent className="container">
                 <AboutContainer>
-                    <img src={Logo}/>
+                    <img src={Logo} alt="Logo"/>
 
                     <InfoAbout icon={<MapPin size={20} weight="fill"/>} abaut="Rua Floriano Peixoto-625, Centro, Santa Bárbara D'Oeste-Sp"/>
                     <InfoAbout icon={<Phone size={20} weight="fill"/>} abaut="(19) 994355018"/>

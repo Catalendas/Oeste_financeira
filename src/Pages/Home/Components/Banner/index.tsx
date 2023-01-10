@@ -50,7 +50,7 @@ export function Banner() {
                                 <SimulationButton icon={<WhatsappLogo size={30}/>} size={100} text="Simular Agora" color="green"/>
                             </BannerDescription>
             
-                            <img src={girl}/>
+                            <img src={girl} alt="Avatar da pagina"/>
                         </SwiperContent>
                         
                     </SwiperSlide>

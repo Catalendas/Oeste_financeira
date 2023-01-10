@@ -42,7 +42,7 @@ export function Simulator() {
                 </SimulatorTitleContainer>            
 
                 <CardSimulator>
-                    <img src={girl} />
+                    <img src={girl} alt="Avatar da pagina"/>
 
                     <SimulatorCard>
 

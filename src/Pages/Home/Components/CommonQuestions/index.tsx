@@ -41,7 +41,7 @@ export function CommonQuestions() {
 
             
                 <div>
-                            <img src={girl}/>
+                    <img src={girl} alt="Avatar da pagina"/>
                 </div>
             </CommonQuestionsContent>
           
