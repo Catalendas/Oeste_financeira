@@ -13,7 +13,8 @@ export const RegisterModalContent = styled(AlertDialog.Content)`
     min-width: 32rem;
     border-radius: 6px;
     padding: 2.5rem 3rem;
-    background: ${({ theme }) => theme.colors["base-label"]};
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background: ${({ theme }) => theme.colors["base-white"]};
 
     position: fixed;
     top: 50%;
@@ -30,7 +31,7 @@ export const RegisterModalContent = styled(AlertDialog.Content)`
         input, textarea {
             border-radius: 6px;
             border: 0;
-            background: ${({ theme }) => theme.colors["hover"]};
+            background: ${({ theme }) => theme.colors["base-hover"]};
             color: ${({ theme }) => theme.colors["base-text"]};
             padding: 1rem;
 

@@ -7,7 +7,7 @@ export function RegisterModal() {
             <Overlay/>
 
             <RegisterModalContent>
-                <AlertDialog.Title>Cadastro de eprentimo</AlertDialog.Title>
+                <AlertDialog.Title>Cadastro de emprentimo</AlertDialog.Title>
 
                 <form action="">
                     <label htmlFor="">Nome</label>
@@ -24,7 +24,9 @@ export function RegisterModal() {
                         <option value="cartao consignado">Cartão consignado</option>
                         <option value="creditopessoal">Crédito Pessoal</option>
                     </select>
-                    
+
+                    <input type="checkbox" />
+                    <label htmlFor="">Li e aceito os termos de condições</label>
                     <textarea name="" id="" placeholder="Comentario(opcional)"></textarea>
                 </form>
             </RegisterModalContent>

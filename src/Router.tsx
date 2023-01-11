@@ -6,6 +6,7 @@ import { CreditoConsignado } from "./Pages/creditoConsignado";
 import { CreditoPessoal } from "./Pages/creditoPessoal";
 import { Fgts } from "./Pages/Fgts";
 import { Home } from "./Pages/Home";
+import { PrivacyPolicy } from "./Pages/PrivacyPolicy";
 
 export function Router() {
     return (
@@ -17,6 +18,7 @@ export function Router() {
                 <Route path="/creditopessoal" element={<CreditoPessoal/>} />
                 <Route path="/cartaoconsignado" element={<CartaoConsignado/>} />
                 <Route path="/sobrenos" element={<About/>} />
+                <Route path="/politicadeprivacidade" element={<PrivacyPolicy/>} />
             </Route>
         </Routes>
     )
