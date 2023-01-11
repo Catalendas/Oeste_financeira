@@ -82,7 +82,7 @@ export const SimulatorCard = styled.div`
         border-radius: 1rem;    
 `
 
-export const FormSimulator = styled.form`
+export const FormSimulator = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;

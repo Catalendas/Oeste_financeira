@@ -13,6 +13,8 @@ import {
 import girl from "../../assets/girlSimulation.png"
 import { priceFormatter } from "../../utils/formatedMoney";
 import { SimulationButton } from "../SimulationButton";
+import * as AlertDialog from "@radix-ui/react-alert-dialog"
+import { RegisterModal } from "./registerModal";
 
 export function Simulator() {
     const [ rangeValue, setRengeValue] = useState([2000])
@@ -20,7 +22,6 @@ export function Simulator() {
 
     function HandleSum(event: any) {
         const rangeEventValue = event.target.value
-
 
         setRengeValue(rangeEventValue)
     }
@@ -37,7 +38,7 @@ export function Simulator() {
 
     return (
         <SimulatorContainer className="container">
-            <h2>Crédito consignado</h2>
+            <h2>Simular agora</h2>
             
             <SimulatorContent>
                 
@@ -75,7 +76,14 @@ export function Simulator() {
                                 <span>Os valores podem variar de acordo com o convênio</span>
                             </Results>
 
-                            <SimulationButton  text="Simular agora" color="blue"/>
+                            <AlertDialog.Root>
+                                <AlertDialog.Trigger asChild>
+                                    <button>Simular</button>
+                                </AlertDialog.Trigger>
+
+                                <RegisterModal/>
+                            </AlertDialog.Root>
+                            
 
                         </FormSimulator>
                         
