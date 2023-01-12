@@ -75,7 +75,7 @@ export function Simulator() {
                                 <p>{priceFormatter.format( Number(ratePrice))}</p>
                                 <span>Os valores podem variar de acordo com o convênio</span>
                             </Results>
-
+                            
                             <AlertDialog.Root>
                                 <AlertDialog.Trigger asChild>
                                     {ratePrice == 0 ? <ButtonSimulator disabled type="button" color="blue">Simular</ButtonSimulator> : <ButtonSimulator type="button" color="blue">Simular</ButtonSimulator> }

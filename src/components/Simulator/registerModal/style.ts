@@ -38,9 +38,15 @@ export const RegisterModalContent = styled(AlertDialog.Content)`
             &::placeholder {
                 color: ${({ theme }) => theme.colors["base-text"]};
             }
+
         }
 
-        div {
+        select {
+            width: 15rem;
+            border: 1px solid;
+        }
+
+        > div {
             display: flex;
             align-items: center;
             gap: .75rem;
@@ -55,4 +61,28 @@ export const RegisterModalContent = styled(AlertDialog.Content)`
     @media(max-width: 520px) {
         min-width: 320px;
     }
+`
+
+export const SimulatedValues = styled.div`
+    pointer-events: none;
+    display: flex;
+    color: black;
+
+    input[type="number"] {
+        background: none;
+        color: black;
+        width: 7.5rem;
+    }
+`
+
+export const CloseButton = styled(AlertDialog.Cancel)`
+    position: absolute;
+    background: transparent;
+    border: 0;
+    top: 1.5rem;
+    right: 1.5rem;
+    line-height: 0;
+    cursor: pointer;
+    
+
 `
