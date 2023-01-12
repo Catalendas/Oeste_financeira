@@ -19,7 +19,7 @@ export function Footer() {
                 <AboutContainer>
                     <InfoAbout abaut="Inicio"/>
                     <InfoAbout abaut="Sobre nós"/>
-                    <InfoAbout abaut="Termos e condições"/>
+                    <InfoAbout abaut="Politica de Privacidade"/>
                 </AboutContainer>
 
                 <AboutContainer>

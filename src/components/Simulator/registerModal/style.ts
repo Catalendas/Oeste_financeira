@@ -12,7 +12,7 @@ export const Overlay = styled(AlertDialog.Overlay)`
 export const RegisterModalContent = styled(AlertDialog.Content)`
     min-width: 32rem;
     border-radius: 6px;
-    padding: 2.5rem 3rem;
+    padding: 2rem 3rem;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     background: ${({ theme }) => theme.colors["base-white"]};
 
@@ -33,11 +33,26 @@ export const RegisterModalContent = styled(AlertDialog.Content)`
             border: 0;
             background: ${({ theme }) => theme.colors["base-hover"]};
             color: ${({ theme }) => theme.colors["base-text"]};
-            padding: 1rem;
+            padding: .75rem;
 
             &::placeholder {
                 color: ${({ theme }) => theme.colors["base-text"]};
             }
         }
+
+        div {
+            display: flex;
+            align-items: center;
+            gap: .75rem;
+
+            a {
+                text-decoration: underline;
+                color: ${({ theme }) => theme.colors["base-blue"]};
+            }
+        }
+    }
+
+    @media(max-width: 520px) {
+        min-width: 320px;
     }
 `

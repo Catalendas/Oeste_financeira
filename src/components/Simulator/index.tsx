@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { 
     SimulatorContainer, 
     CardSimulator, 
@@ -8,7 +8,8 @@ import {
     OptionsContainer, 
     OptionsButton,
     SimulatorContent,
-    Results
+    Results,
+    ButtonSimulator
 } from "./styled";
 import girl from "../../assets/girlSimulation.png"
 import { priceFormatter } from "../../utils/formatedMoney";
@@ -20,12 +21,6 @@ export function Simulator() {
     const [ rangeValue, setRengeValue] = useState([2000])
     const [ ratePrice, setRatePrice] = useState(0)
 
-    function HandleSum(event: any) {
-        const rangeEventValue = event.target.value
-
-        setRengeValue(rangeEventValue)
-    }
-
     function handlePlus(event: any) {
         const radioValue = event.target.value
 
@@ -33,8 +28,13 @@ export function Simulator() {
 
         setRatePrice(results)
     }
-
     
+    function HandleSum(event: any) {
+        const rangeEventValue = event.target.value
+
+        setRengeValue(rangeEventValue)
+        setRatePrice(0)
+    }
 
     return (
         <SimulatorContainer className="container">
@@ -78,10 +78,10 @@ export function Simulator() {
 
                             <AlertDialog.Root>
                                 <AlertDialog.Trigger asChild>
-                                    <button>Simular</button>
+                                    {ratePrice == 0 ? <ButtonSimulator disabled type="button" color="blue">Simular</ButtonSimulator> : <ButtonSimulator type="button" color="blue">Simular</ButtonSimulator> }
                                 </AlertDialog.Trigger>
 
-                                <RegisterModal/>
+                                <RegisterModal rate={ratePrice} range={rangeValue}/>
                             </AlertDialog.Root>
                             
 

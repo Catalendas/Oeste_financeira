@@ -1,7 +1,15 @@
 import * as AlertDialog from "@radix-ui/react-alert-dialog"
+import { NavLink } from "react-router-dom"
+import { priceFormatter } from "../../../utils/formatedMoney"
+import { SimulationButton } from "../../SimulationButton"
 import { Overlay, RegisterModalContent } from "./style"
 
-export function RegisterModal() {
+interface RegisterModalProps {
+    range: number[]
+    rate: number
+}
+
+export function RegisterModal({ range, rate}:RegisterModalProps) {
     return (
         <AlertDialog.Portal>
             <Overlay/>
@@ -25,9 +33,18 @@ export function RegisterModal() {
                         <option value="creditopessoal">Crédito Pessoal</option>
                     </select>
 
-                    <input type="checkbox" />
-                    <label htmlFor="">Li e aceito os termos de condições</label>
+                    <div>
+                        <input type="checkbox" />
+                        <label htmlFor="">Li e aceito as <NavLink to="/politicadeprivacidade">politicas de privacidade</NavLink></label>
+                    </div>
                     <textarea name="" id="" placeholder="Comentario(opcional)"></textarea>
+
+                    <div>
+                        <span>Valor cimulado: {priceFormatter.format((Number(range)))}</span>
+                        <span>Valor da parecla: {priceFormatter.format((Number(rate)))}</span>
+                    </div>
+
+                    <SimulationButton text="Simular" color="blue" isInteractile/>
                 </form>
             </RegisterModalContent>
         </AlertDialog.Portal>

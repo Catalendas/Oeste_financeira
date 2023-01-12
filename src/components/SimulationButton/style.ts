@@ -26,4 +26,8 @@ export const ButtonContainer = styled.button<ButtonContainerProsp>`
     &:hover {
         background: ${({ theme, color }) => theme.colors[`base-${color}-black`]};
     }
+
+    &:disabled {
+        background: ${({ theme }) => theme.colors["base-hover"]};
+    }
 `
