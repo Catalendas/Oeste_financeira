@@ -84,5 +84,9 @@ export const CloseButton = styled(AlertDialog.Cancel)`
     line-height: 0;
     cursor: pointer;
     
-
+    @media(max-width: 520px) {
+         svg {
+            width: 1.4rem;
+         }
+    }
 `
