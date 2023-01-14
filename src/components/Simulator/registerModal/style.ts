@@ -1,5 +1,9 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import * as AlertDialog from "@radix-ui/react-alert-dialog"
+
+interface OverlayProps {
+    submit?: boolean
+}
 
 export const Overlay = styled(AlertDialog.Overlay)`
     background: rgba(0, 0, 0, .75);
@@ -7,9 +11,10 @@ export const Overlay = styled(AlertDialog.Overlay)`
     height: 100vh;
     width: 100vw;
     inset: 0;
+
 `
 
-export const RegisterModalContent = styled(AlertDialog.Content)`
+export const RegisterModalContent = styled(AlertDialog.Content)<OverlayProps>`
     min-width: 32rem;
     border-radius: 6px;
     padding: 2rem 3rem;
@@ -56,6 +61,14 @@ export const RegisterModalContent = styled(AlertDialog.Content)`
                 color: ${({ theme }) => theme.colors["base-blue"]};
             }
         }
+    }
+
+    .form {
+        display: block;
+        
+        ${(submit) => submit && css`
+            display: none;
+        `}
     }
 
     @media(max-width: 520px) {
