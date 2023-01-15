@@ -31,10 +31,15 @@ export const RegisterModalContent = styled(AlertDialog.Content)<OverlayProps>`
 
         display: flex;
         flex-direction: column;
-        gap: 1rem;
+        gap: .4rem;
 
-        input, textarea {
+        label {
+            font-weight: bold;
+        }
+
+        > input, textarea {
             border-radius: 6px;
+            width: 100%;
             border: 0;
             background: ${({ theme }) => theme.colors["base-hover"]};
             color: ${({ theme }) => theme.colors["base-text"]};
@@ -44,6 +49,10 @@ export const RegisterModalContent = styled(AlertDialog.Content)<OverlayProps>`
                 color: ${({ theme }) => theme.colors["base-text"]};
             }
 
+        }
+
+        p {
+            color: red;
         }
 
         select {

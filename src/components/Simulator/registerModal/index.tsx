@@ -22,10 +22,10 @@ interface RegisterModalProps {
 
 const RegisterModalSchema = z.object({
     Name: z.string().min(1, { message: "Digite seu nome completo"}),
-    Cpf: z.string().min(1, { message: "Informe o CPF"}),
-    Tel: z.number().min(1, { message: "Informe seu numero de Celular"}),
-    Type: z.string().min(1, { message: ""}),
-    Policy: z.string().min(1, {message: ""}),
+    Cpf: z.string().min(1, { message: "Informe o CPF"}).max(14, {message: "Formato invalido"}),
+    Tel: z.string().min(1, { message: "Informe seu numero de Celular"}),
+    Type: z.string().min(1, { message: "Escolha uma opção valida"}),
+    Policy: z.boolean(),
     Coment: z.string()
 })
 
@@ -33,7 +33,7 @@ type RegisterModalFormInputs = z.infer<typeof RegisterModalSchema>
 
 export function RegisterModal({ range, rate}:RegisterModalProps) {
 
-    const { register, handleSubmit, formState: {errors} } = useForm<RegisterModalFormInputs>( {
+    const { register, handleSubmit, formState: {errors, isSubmitSuccessful} } = useForm<RegisterModalFormInputs>( {
         resolver: zodResolver(RegisterModalSchema)
     })
 
@@ -41,8 +41,7 @@ export function RegisterModal({ range, rate}:RegisterModalProps) {
         console.log(data)
     }   
 
-    console.log(errors)
-
+   
     
 
     return (
@@ -55,21 +54,22 @@ export function RegisterModal({ range, rate}:RegisterModalProps) {
                     <X size={26}/>
                 </CloseButton>
 
-                <div>
+                {!isSubmitSuccessful ? 
+                    <div>
                     <AlertDialog.Title>Cadastro de emprentimo</AlertDialog.Title>
 
                     <form onSubmit={handleSubmit(handleRegister)}>
 
                         <label htmlFor="">Nome</label>
-                        <input type="text" placeholder="Nome"  {...register("Name")}/>
+                        <input type="text" placeholder="Nome Completo"  {...register("Name")}/>
                         {errors && <p>{errors.Name?.message}</p>}
 
                         <label htmlFor="">CPF</label>
-                        <input type="cpf" placeholder="CPF"  {...register("Cpf")}/>
+                        <input type="text" placeholder="CPF 000.000.000-00"  {...register("Cpf")} pattern="\d{3}\.\d{3}\.\d{3}-\d{2}"/>
                         {errors && <p>{errors.Cpf?.message}</p>}
 
                         <label htmlFor="">Celular</label>
-                        <input type="tel" placeholder="Celular (00) 00000000"  {...register("Tel")}/>
+                        <input type="tel" placeholder="Celular (00)00000000"  {...register("Tel")}/>
                         {errors && <p>{errors.Tel?.message}</p>}
 
                         <select {...register("Type")}>
@@ -82,7 +82,7 @@ export function RegisterModal({ range, rate}:RegisterModalProps) {
                         {errors && <p>{errors.Type?.message}</p>}
 
                         <div>
-                            <input type="checkbox"  {...register("Policy")}/>
+                            <input type="checkbox"  {...register("Policy")} required/>
                             <label htmlFor="">Li e aceito as <NavLink to="/politicadeprivacidade">politicas de privacidade</NavLink></label>
                         </div>
                         {errors && <p>{errors.Policy?.message}</p>}
@@ -102,8 +102,12 @@ export function RegisterModal({ range, rate}:RegisterModalProps) {
 
                     </form>
 
-                </div>
-                {/* {isSubmitted && <SucessSubmiting />} */}
+                </div>  
+            
+                : <SucessSubmiting/>}
+
+                
+                   
             </RegisterModalContent>
         </AlertDialog.Portal>
     )
