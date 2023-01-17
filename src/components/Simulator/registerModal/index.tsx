@@ -14,6 +14,7 @@ import { SimulationButton } from "../../SimulationButton"
 import { CloseButton, Overlay, RegisterModalContent, SimulatedValues} from "./style"
 
 import { SucessSubmiting } from "./SucessSubmiting/inde"
+import { addRegister } from "../../../services/dataAcess/registerAcess"
 
 interface RegisterModalProps {
     range: number[]
@@ -38,6 +39,16 @@ export function RegisterModal({ range, rate}:RegisterModalProps) {
     })
 
     function handleRegister(data: RegisterModalFormInputs) {
+        addRegister(
+            {   content: data.Coment, 
+                cpf: data.Cpf, 
+                name: data.Name, 
+                policy: data.Policy, 
+                tel: data.Tel, 
+                type: data.Type,
+                simutaledValue: range,
+                rate: rate
+            })
         console.log(data)
     }   
 
