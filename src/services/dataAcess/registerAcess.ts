@@ -1,7 +1,7 @@
 import { db } from "../../firebaseConfig"
 import { RegisterType } from "../../interfaces/registerInterface"
 
-const planReference = db.collection("usuarios")
+const planReference = db.collection("clientes")
 
 export async function addRegister(body: RegisterType) {
     const registerObject: RegisterType = {

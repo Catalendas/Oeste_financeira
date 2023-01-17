@@ -1,14 +1,15 @@
 import firebase from "firebase";
 import "firebase/firestore";
 
+
 // Your web app's Firebase configuration
 const firebaseConfig = {
-    apiKey: process.env.FIREBASE_API_KEY,
-    authDomain: process.env.FIREBASE_AUTH_DOMAIN,
-    projectId: process.env.FIREBASE_PROJECT_ID,
-    storageBucket: process.env.FIREBASE_STORAGE_BUCK,
-    messagingSenderId: process.env.FIREBASE_MESSAGING_SENDER_ID,
-    appId: process.env.FIREBASE_APP_ID
+    apiKey: "AIzaSyDsOLr-m-KqERWx7A9ea80dgYewjL5cU0Q",
+    authDomain: "oeste-financeira.firebaseapp.com",
+    projectId: "oeste-financeira",
+    storageBucket: "oeste-financeira.appspot.com",
+    messagingSenderId: "105887972242",
+    appId: "1:105887972242:web:9522554b9a4abd712bdf4b"
   };
 
 firebase.initializeApp(firebaseConfig);
