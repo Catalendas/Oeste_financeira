@@ -12,8 +12,10 @@ export function Header({ setMenuIsVisible }: HeaderProps) {
         <HeaderContainer >
             <div className="container">
                 <div>
-                    <img src={Logo} alt="Logo"/>
-                    <span>Oeste Financeira</span>
+                    <NavLink to="/" >
+                        <img src={Logo} alt="Logo"/>
+                        <span>Oeste Financeira</span>
+                    </NavLink>
                 </div>
 
                 <HeaderLinks>

@@ -19,14 +19,23 @@ export const HeaderContainer = styled.header`
         align-items: center;
         justify-content: space-between;
 
-        img {
-            width: 5rem;
-            height: 5rem;
-        }       
+        
+
+        a {
+            display: flex;
+            align-items: center;
+
+            img {
+                width: 5rem;
+                height: 5rem;
+            }               
+        }
 
         svg {
-            display: none;
-        }
+                display: none;
+            }
+
+        
         
     }
 
