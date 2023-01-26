@@ -73,6 +73,7 @@ interface SwiperContentProps {
 
 export const SwiperContainer = styled(SwiperSlide)`
     height: 30rem;
+    width: 1orem;
 `
 
 export const SwiperContent = styled.div<SwiperContentProps>`

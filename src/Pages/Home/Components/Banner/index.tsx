@@ -36,6 +36,7 @@ export function Banner() {
                 navigation={true}
                 modules={[Autoplay, Pagination, Navigation]}
                 className="swiper" 
+                style={{ width: '100%', flex: '1'}}
             >
                     <SwiperContainer>
                         
