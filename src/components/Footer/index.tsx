@@ -10,7 +10,7 @@ export function Footer() {
                 <AboutContainer>
                     <img src={Logo} alt="Logo"/>
 
-                    <InfoAbout icon={<MapPin size={20} weight="fill"/>} abaut="Rua Floriano Peixoto-625, Centro, Santa Bárbara D'Oeste-Sp"/>
+                    <InfoAbout icon={<MapPin size={20} weight="fill"/>} abaut="Rua Floriano Peixoto-625, Centro, Santa Bárbara D'Oeste-Sp" link="https://goo.gl/maps/ZJLpT9568Sfozea56"/>
                     <InfoAbout icon={<Phone size={20} weight="fill"/>} abaut="(19) 994355018" link="https://wa.me/5519994355018"/>
                     <InfoAbout icon={<EnvelopeOpen size={20} weight="fill"/>} abaut="oeste@exemplo.com"/>
                     <InfoAbout abaut="Oeste promotora servicos cadastrais 242342352352532/0001-84"/>

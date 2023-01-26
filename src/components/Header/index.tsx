@@ -19,38 +19,38 @@ export function Header({ setMenuIsVisible }: HeaderProps) {
                 </div>
 
                 <HeaderLinks>
-                    <li>
-                        <ul>
+                    <ul>
+                        <li>
                             <NavLink to="/">
                                 Inicio
                             </NavLink>
-                        </ul>
-                        <ul>
+                        </li>
+                        <li>
                             <NavLink to="/fgts">
                                 FGTS
                             </NavLink>
-                        </ul>
-                        <ul>
+                        </li>
+                        <li>
                             <NavLink to="/creditoconsignado">
                                 Crédito consignado
                             </NavLink>
-                        </ul>
-                        <ul>
+                        </li>
+                        <li>
                         <NavLink to="/creditopessoal">
                                 Crédito Pessoal
                             </NavLink>
-                        </ul>
-                        <ul>
+                        </li>
+                        <li>
                             <NavLink to="/cartaoconsignado">
                                 Cartão de Crédito Consignado
                             </NavLink>
-                        </ul>
-                        <ul>
+                        </li>
+                        <li>
                             <NavLink to="/sobrenos">
                                 Sobre nós
                             </NavLink>
-                        </ul>
-                    </li>
+                        </li>
+                    </ul>
                 </HeaderLinks>
 
                 <TextAlignRight size={50} onClick={() => setMenuIsVisible(true)}/>

@@ -25,7 +25,7 @@ export function InfoCredt() {
                             </AlertDialog.Root>
                 </InfoCredtText>
 
-                <img src={Fgts}/>
+                <img src={Fgts} alt="Fechando o Contrato"/>
             </InfoCredtContent>
 
             

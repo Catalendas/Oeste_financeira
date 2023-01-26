@@ -51,18 +51,20 @@ export const HeaderContainer = styled.header`
     }
 `
 
-export const HeaderLinks = styled.nav`
-    li  {
-        display: flex;
-        gap: 0.75rem;
+export const HeaderLinks = styled.nav`     
         
         ul {
 
-            &:hover {
-                color: ${({ theme }) => theme.colors["base-hover"]};
-                transition: .3s;
+            display: flex;
+            gap: 0.75rem;
+            list-style: none;
+
+                li {
+                    &:hover {
+                    color: ${({ theme }) => theme.colors["base-hover"]};
+                    transition: .3s;
+                }
             }
-        }
     }
 
     @media(max-width: 520px) {
