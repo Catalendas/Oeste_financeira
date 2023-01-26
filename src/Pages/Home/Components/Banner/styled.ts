@@ -72,15 +72,14 @@ interface SwiperContentProps {
 }
 
 export const SwiperContainer = styled(SwiperSlide)`
-    height: 30rem;
-    width: 1orem;
+
 `
 
 export const SwiperContent = styled.div<SwiperContentProps>`
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    height: 30rem;
 
     ${({ img }) => img ? css`
         background: ${({ theme }) => `url(${img})  no-repeat `};    
