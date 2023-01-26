@@ -9,7 +9,6 @@ export const CreditoPessoalContainer = styled.section`
 export const BannerPage = styled.div`
     background: ${({ theme }) => `url(${Pessoal})  no-repeat center`};
     background-size: 100%;
-    background-attachment: fixed;
     background-repeat: no-repeat;
     width: 100%;
     height: 30rem;
