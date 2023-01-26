@@ -79,7 +79,7 @@ export const SwiperContent = styled.div<SwiperContentProps>`
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 30rem;
+    height: 100%;
 
     ${({ img }) => img ? css`
         background: ${({ theme }) => `url(${img})  no-repeat `};    
