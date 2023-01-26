@@ -9,6 +9,8 @@ export const FgtsContainer = styled.section`
 export const BannerPage = styled.div`
     background: ${({ theme }) => `url(${Fgts})  no-repeat center`};
     background-size: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     width: 100%;
     height: 30rem;
 

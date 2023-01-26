@@ -17,14 +17,14 @@ export function Footer() {
                 </AboutContainer>
 
                 <AboutContainer>
-                    <InfoAbout abaut="Inicio"/>
-                    <InfoAbout abaut="Sobre nós"/>
-                    <InfoAbout abaut="Politica de Privacidade"/>
+                    <InfoAbout abaut="Inicio" link="/"/>
+                    <InfoAbout abaut="Sobre nós" link="/sobrenos"/>
+                    <InfoAbout abaut="Politica de Privacidade" link="/politicadeprivacidade"/>
                 </AboutContainer>
 
                 <AboutContainer>
                     <h3>Nossas redes sociais</h3>
-                    <InfoAbout icon={<InstagramLogo size={20} weight="fill" />} abaut="Intagran" />
+                    <InfoAbout icon={<InstagramLogo size={20} weight="fill" />} abaut="Intagran" link="https://www.instagram.com/oestecredpromotora"/>
                     <InfoAbout icon={<FacebookLogo size={20} weight="fill" />} abaut="Facebook" link="https://www.facebook.com/OestecredPromotora"/>
                 </AboutContainer>
             </FooterContent>
