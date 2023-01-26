@@ -40,7 +40,7 @@ export function Banner() {
             >
                     <SwiperContainer>
                         
-                        <SwiperContent color="blue-white">
+                        <SwiperContent >
                             <BannerDescription color="gray">
                                 <h1>Dinheiro rápido na sua conta</h1>
                                 <div>
