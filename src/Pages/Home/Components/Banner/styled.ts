@@ -69,6 +69,7 @@ export const BannerDescription = styled.div<BannerDescriptionProps>`
 
 interface SwiperContentProps {
     img?: string
+    color?: string
 }
 
 export const SwiperContainer = styled(SwiperSlide)`
@@ -80,6 +81,10 @@ export const SwiperContent = styled.div<SwiperContentProps>`
     justify-content: center;
     align-items: center;
     height: 30rem;
+
+    ${({  color}) => color ? css`
+        background-color: ${({ theme }) => theme.colors[`base-${color}`]};
+    ` : ""}
 
     ${({ img }) => img ? css`
         background: ${({ theme }) => `url(${img})  no-repeat `};    

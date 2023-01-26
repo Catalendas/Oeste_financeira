@@ -1,5 +1,7 @@
 import { InfoCredtContainer, InfoCredtContent, InfoCredtText } from "./styled";
 import Fgts from "../../assets/contratofgts.webp"
+import * as AlertDialog from "@radix-ui/react-alert-dialog"
+import { RegisterModal } from "../Simulator/registerModal";
 
 export function InfoCredt() {
     return (
@@ -13,7 +15,14 @@ export function InfoCredt() {
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem excepturi at laudantium placeat voluptates magnam inventore, doloribus quis voluptatem facilis harum, eius porro minima veritatis nemo dolores eos temporibus voluptate?
                     </p>
 
-                    <button>Fale Conosco</button>
+                    
+                    <AlertDialog.Root>
+                                <AlertDialog.Trigger asChild>
+                                    <button>Fale Conosco</button>
+                                </AlertDialog.Trigger>
+
+                                <RegisterModal rate={0} range={[0]}/>
+                            </AlertDialog.Root>
                 </InfoCredtText>
 
                 <img src={Fgts}/>

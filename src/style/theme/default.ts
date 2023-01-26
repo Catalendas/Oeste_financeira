@@ -1,7 +1,8 @@
-export const DefaultTheme = {
+export const defaultTheme = {
     colors: {
         "base-white": "#FFFF",
         "base-blue": "#008BFF",
+        "base-blue-white": "#6C9DC1",
         "base-blue-black": "#003D83",
         "base-green": "#4DDC00",
         "base-green-black": "#3AA700",
