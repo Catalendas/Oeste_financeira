@@ -83,7 +83,8 @@ export const SwiperContent = styled.div<SwiperContentProps>`
 
     ${({ img }) => img ? css`
         background: ${({ theme }) => `url(${img})  no-repeat `};    
-        background-size: cover;  
+        background-size: cover; 
+        background-position: 50% 20%; 
     ` : ""}
 
     @media(max-width: 520px) {
