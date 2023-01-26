@@ -18,7 +18,7 @@ import girl from "../../../../assets/girl1.png";
 
 // Page style
 import { SimulationButton } from "../../../../components/SimulationButton";
-import { BannerContainer, BannerDescription, SwiperContent } from "./styled";
+import { BannerContainer, BannerDescription, SwiperContainer, SwiperContent } from "./styled";
 
 export function Banner() {
     return (
@@ -37,7 +37,7 @@ export function Banner() {
                 modules={[Autoplay, Pagination, Navigation]}
                 className="swiper" 
             >
-                    <SwiperSlide>
+                    <SwiperContainer>
                         
                         <SwiperContent>
                             <BannerDescription color="gray">
@@ -53,21 +53,20 @@ export function Banner() {
                             <img src={girl} alt="Avatar da pagina"/>
                         </SwiperContent>
                         
-                    </SwiperSlide>
+                    </SwiperContainer>
 
-                    <SwiperSlide>
+                    <SwiperContainer>
 
                         <SwiperContent img={Foto}>
                             <BannerDescription color="white">
                                <h2>Faça a antecipação do seu FGTS</h2>
                             </BannerDescription>
-            
 
                         </SwiperContent>
 
-                    </SwiperSlide>
+                    </SwiperContainer>
 
-                    <SwiperSlide>
+                    <SwiperContainer>
                         <SwiperContent img={cartImage}>
                             <BannerDescription color="white">
                                <h2>dasdadas</h2>
@@ -76,9 +75,9 @@ export function Banner() {
 
                         </SwiperContent>
 
-                    </SwiperSlide>
+                    </SwiperContainer>
 
-                    <SwiperSlide>
+                    <SwiperContainer>
                         <SwiperContent img={personBanner}>
                             <BannerDescription color="white">
                                <h2>dasdadas</h2>
@@ -87,7 +86,7 @@ export function Banner() {
 
                         </SwiperContent>
 
-                    </SwiperSlide>
+                    </SwiperContainer>
             </Swiper>
         </BannerContainer>
     )

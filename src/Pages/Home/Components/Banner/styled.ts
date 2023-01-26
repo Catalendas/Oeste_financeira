@@ -1,4 +1,5 @@
 import styled, { css } from "styled-components";
+import { SwiperSlide } from "swiper/react";
 
 export const BannerContainer = styled.section`
     width: 100%;
@@ -70,6 +71,10 @@ interface SwiperContentProps {
     img?: string
 }
 
+export const SwiperContainer = styled(SwiperSlide)`
+    height: 30rem;
+`
+
 export const SwiperContent = styled.div<SwiperContentProps>`
     display: flex;
     justify-content: center;
@@ -79,7 +84,6 @@ export const SwiperContent = styled.div<SwiperContentProps>`
     ${({ img }) => img ? css`
         background: ${({ theme }) => `url(${img})  no-repeat `};    
         background-size: cover;  
-        
     ` : ""}
 
     @media(max-width: 520px) {
