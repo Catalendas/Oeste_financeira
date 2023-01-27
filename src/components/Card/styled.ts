@@ -65,8 +65,8 @@ export const CardContent = styled.div`
         }
 
         @media(max-width: 520px) {
-            right: 0;
-            background: rgba(0, 255, 255, 0.2);
+            top: 0;
+            background: rgba(27, 27, 27, 0.5);
             backdrop-filter: blur(2px);
         }
 `
