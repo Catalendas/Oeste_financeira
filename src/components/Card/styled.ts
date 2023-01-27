@@ -29,7 +29,7 @@ export const CardContainer = styled.div`
 export const CardContent = styled.div`
         width: 22.5rem;
         height: 12.5rem;
-        padding: 30px; 
+        padding: 2rem; 
         top: 300px;
         
         color: white;
@@ -37,7 +37,6 @@ export const CardContent = styled.div`
         background: rgba(27, 27, 27, 0.5);
         backdrop-filter: blur(5px);
 
-        
         display: flex;
         position: absolute;
         flex-direction: column;
@@ -49,8 +48,7 @@ export const CardContent = styled.div`
 
         .card {
 
-        }
-        
+        }     
 
         h2 {
             text-transform: uppercase;

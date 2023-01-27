@@ -1,32 +1,49 @@
-import { AboutContainer, FooterContainer, FooterContent } from "./styled";
-import Logo from '../../assets/logo.png'
-import { InfoAbout } from "./infoAbout";
-import { EnvelopeOpen, FacebookLogo, InstagramLogo, MapPin, Phone } from "phosphor-react";
+import { FacebookLogo, InstagramLogo, MapPin, WhatsappLogo } from "phosphor-react";
+import { BussinesInformation, ContactComponent, FooterContainer, FooterContent, FooterLinks, SocialLinks } from "./styled";
+
 
 export function Footer() {
     return (
         <FooterContainer >
-            <FooterContent className="container">
-                <AboutContainer>
-                    <img src={Logo} alt="Logo"/>
+            <FooterContent>
 
-                    <InfoAbout icon={<MapPin size={20} weight="fill"/>} abaut="Rua Floriano Peixoto-625, Centro, Santa Bárbara D'Oeste-Sp" link="https://goo.gl/maps/ZJLpT9568Sfozea56"/>
-                    <InfoAbout icon={<Phone size={20} weight="fill"/>} abaut="(19) 994355018" link="https://wa.me/5519994355018"/>
-                    <InfoAbout icon={<EnvelopeOpen size={20} weight="fill"/>} abaut="oeste@exemplo.com"/>
-                    <InfoAbout abaut="Oeste promotora servicos cadastrais 242342352352532/0001-84"/>
-                </AboutContainer>
+                <FooterLinks className="container">
+                        <ContactComponent href="https://api.whatsapp.com/send?phone=5519993178152&text=Vi%20o%20site%20e%20gostaria%20de%20fazer%20uma%20simula%C3%A7%C3%A3o">
+                                <div>
+                                    <WhatsappLogo size={32} />
+                                    <h2>WhatsApp da Oeste</h2>
+                                </div>
+                                <div>
+                                    <span>Atendimento, faturas e duvidas</span>
+                                </div>
+                        </ContactComponent>
 
-                <AboutContainer>
-                    <InfoAbout abaut="Inicio" link="/"/>
-                    <InfoAbout abaut="Sobre nós" link="/sobrenos"/>
-                    <InfoAbout abaut="Politica de Privacidade" link="/politicadeprivacidade"/>
-                </AboutContainer>
+                        <ContactComponent href="https://goo.gl/maps/x16TfTer8BXcASyh9">
+                                <div>
+                                    <MapPin size={32} />
+                                    <h2>Encontre a Oeste</h2>
+                                </div>
+                                <div>
+                                    <span>Onde encontro a Oeste</span>
+                                </div>
+                        </ContactComponent>
 
-                <AboutContainer>
-                    <h3>Nossas redes sociais</h3>
-                    <InfoAbout icon={<InstagramLogo size={20} weight="fill" />} abaut="Intagran" link="https://www.instagram.com/oestecredpromotora"/>
-                    <InfoAbout icon={<FacebookLogo size={20} weight="fill" />} abaut="Facebook" link="https://www.facebook.com/OestecredPromotora"/>
-                </AboutContainer>
+                        <SocialLinks>
+                                <span>Siga a Oeste</span>
+                                <div>
+                                    <a href="">
+                                        <InstagramLogo size={40} />
+                                    </a>
+                                    <a href="">
+                                        <FacebookLogo size={40} />
+                                    </a>
+                                </div>
+                        </SocialLinks>
+                </FooterLinks>
+                <BussinesInformation className="container">
+                    
+                </BussinesInformation>
+               
             </FooterContent>
         </FooterContainer>
     )

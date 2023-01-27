@@ -14,7 +14,10 @@ export function Fgts() {
                 <span>No memos dia em sua conta</span>
             </BannerPage>
             
-            <InfoCredt/>
+            <InfoCredt
+                title="Antecipação do FGTS"
+                text="Ative a modalidade de Saque-Aniversário e autorize a Oeste a te ajudar. Você faz isso no app oficial do FGTS ou no site da Caixa. Você simula o empréstimo, revisa os termos e faz a contratação diretamente com a Oeste. Você não precisa fazer mais nada após a liberação do crédito."
+            />
             
 
             <CardContainer className="container">
@@ -23,17 +26,17 @@ export function Fgts() {
                 <div>
                     <Card 
                         title="Crédito Consignado"
-                        description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam inventore vel molestias. Repudiandae alias consequuntur veniam nobis tenetur. Consequuntur unde similique labore nobis laboriosam accusantium corrupti sapiente quo, distinctio quis!"
+                        description="É a modalidade mais eficiente e segura de conseguir um empréstimo! Ela usa o salário como garantia, tem as melhores taxas e as parcelas são descontadas direto na folha de pagamento."
                         img={Consignado}
                     />
                     <Card
                         title="Crédito Pessoal"
-                        description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam inventore vel molestias. Repudiandae alias consequuntur veniam nobis tenetur. Consequuntur unde similique labore nobis laboriosam accusantium corrupti sapiente quo, distinctio quis!"
+                        description="Para solicitá-lo, não é necessário comprovar renda e o dinheiro é liberado em até 24 horas após a aprovação do crédito. O parcelamento pode ser feito em até 18 vezes"
                         img={Pessoal}
                     />
                     <Card
                         title="Cartão de Crédito Consignado"
-                        description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam inventore vel molestias. Repudiandae alias consequuntur veniam nobis tenetur. Consequuntur unde similique labore nobis laboriosam accusantium corrupti sapiente quo, distinctio quis!"
+                        description="Mais facilidade para você, aposentado e servidor de órgãos conveniados, fazer compras e saques, à vista ou parcelados. Parte da fatura é descontada diretamente do seu benefício/salário, e é você quem autoriza esse percentual. Sua fatura é mensal, de acordo com a utilização do seu cartão."
                         img={Cartao}
                     />
                 </div>

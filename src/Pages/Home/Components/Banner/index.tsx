@@ -60,7 +60,8 @@ export function Banner() {
 
                         <SwiperContent img={Foto}>
                             <BannerDescription color="white">
-                               <h2>Faça a antecipação do seu FGTS</h2>
+                               <h2>Como posso fazer a antecipação do meu FGTS?</h2>
+                               
                             </BannerDescription>
 
                         </SwiperContent>
@@ -70,7 +71,7 @@ export function Banner() {
                     <SwiperContainer>
                         <SwiperContent img={cartImage}>
                             <BannerDescription color="white">
-                               <h2>dasdadas</h2>
+                               <h2>Quem tem direito ao cartão beneficio? </h2>
                             </BannerDescription>
             
 
