@@ -11,7 +11,7 @@ import {
     Results,
     ButtonSimulator
 } from "./styled";
-import girl from "../../assets/girlSimulation.png"
+import girl from "../../assets/girlsimulation.webp"
 import { priceFormatter } from "../../utils/formatedMoney";
 import { SimulationButton } from "../SimulationButton";
 import * as AlertDialog from "@radix-ui/react-alert-dialog"

@@ -14,7 +14,7 @@ import "swiper/css/navigation";
 import Foto from '../../../../assets/fgts.webp'
 import cartImage from '../../../../assets/cartaoconsignadobanner.webp'
 import personBanner from '../../../../assets/creditopessoalbanner.webp'
-import girl from "../../../../assets/girl1.png";
+import girl from "../../../../assets/girl1.webp";
 
 // Page style
 import { SimulationButton } from "../../../../components/SimulationButton";

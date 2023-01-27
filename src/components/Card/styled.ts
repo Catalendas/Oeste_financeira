@@ -18,6 +18,12 @@ export const CardContainer = styled.div`
         top: 160px;
     }
 
+    @media(max-width: 520px){
+        &:hover .card {
+            top: 0;
+        }
+    }
+
 `
 
 export const CardContent = styled.div`

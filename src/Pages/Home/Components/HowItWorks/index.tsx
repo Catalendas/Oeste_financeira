@@ -1,5 +1,5 @@
 import { Description, HowItWorksContainer } from "./styled";
-import GirlEngine from '../../../../assets/girlEngine.png'
+import GirlEngine from '../../../../assets/girlEngine.webp'
 import { Instruction } from "./Instruction";
 
 export function HowItWorks(){

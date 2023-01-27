@@ -1,5 +1,5 @@
 import { AccordionContent, AccordionItem, AccordionRoot, AccordionTrigger, CommonQuestionsContainer, CommonQuestionsContent} from './styled'
-import girl from "../../../../assets/girlquestion.png"
+import girl from "../../../../assets/girlquestion.webp"
 
 export function CommonQuestions() {
     return (
