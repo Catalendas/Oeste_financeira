@@ -65,6 +65,7 @@ export const CardContent = styled.div`
         }
 
         @media(max-width: 520px) {
+            height: 22.5rem;
             top: 0;
             background: rgba(27, 27, 27, 0.5);
             backdrop-filter: blur(2px);
