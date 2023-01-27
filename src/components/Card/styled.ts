@@ -21,12 +21,12 @@ export const CardContainer = styled.div`
 `
 
 export const CardContent = styled.div`
-        width: 100%;
-        height: 100%;
+        width: 22.5rem;
+        height: 22.5rem;
         top: 0;
-        right: -100%;
+        color: white;
         position: absolute;
-        background: rgba(0, 255, 255, 0.5);
+        background: rgba(27, 27, 27, 0.5);
         backdrop-filter: blur(5px);
         border-radius: 15px;
         padding: 30px; 
