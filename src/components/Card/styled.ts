@@ -15,22 +15,25 @@ export const CardContainer = styled.div`
     }
 
     &:hover .card{
-        right: 0;
+        top: 160px;
     }
 
 `
 
 export const CardContent = styled.div`
         width: 22.5rem;
-        height: 22.5rem;
-        top: 0;
+        height: 12.5rem;
+        padding: 30px; 
+        top: 300px;
+        
         color: white;
-        position: absolute;
+
         background: rgba(27, 27, 27, 0.5);
         backdrop-filter: blur(5px);
-        border-radius: 15px;
-        padding: 30px; 
+
+        
         display: flex;
+        position: absolute;
         flex-direction: column;
         justify-content: center;
 
@@ -45,7 +48,7 @@ export const CardContent = styled.div`
 
         h2 {
             text-transform: uppercase;
-            font-size: 1.2rem;
+            font-size: 1rem;
             font-weight: 500;
         }
 

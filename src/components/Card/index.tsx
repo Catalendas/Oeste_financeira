@@ -15,7 +15,6 @@ export function Card({img, title, description}: CardProps) {
                 <h2>{title}</h2>
                 <p>{description}</p>
 
-                <button>Entrar em contato</button>
             </CardContent>
         </CardContainer>
     )
