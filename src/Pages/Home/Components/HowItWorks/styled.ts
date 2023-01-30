@@ -12,19 +12,9 @@ export const HowItWorksContainer = styled.section`
     > div {
         display: flex;
         align-items: center;
-        justify-content: flex-end;
+        justify-content: center;
    }
 
-   @media(max-width: 520px) {
-
-        width: 100%;
-         div {
-
-            img {
-                display: none;
-            }
-         }
-   }
 
 `
 
@@ -34,14 +24,7 @@ export const Description = styled.div`
 
         h2 {
             color: ${({ theme }) => theme.colors["base-white"]};
-            font-size: 3rem;
-            
-        }
-
-        span {
-            font-size: 1.5rem;
-            color: ${({ theme }) => theme.colors["base-blue-black"]};
-            margin-bottom: 1rem;
+            font-size: 3rem;       
         }
 
         @media(max-width: 520px) {
@@ -50,52 +33,43 @@ export const Description = styled.div`
         }
 `
 
-export const IntructionContainer = styled.div`
-    width: 100%;
+export const StepsContainer = styled.div `
     display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    margin-top: 2rem;
+    color: ${({ theme }) => theme.colors["base-white"]};
+
+    @media(max-width: 520px) {
+        flex-direction: column;
+
+        > svg {
+            display: none;
+        }
+    }
+`
+
+export const Steps = styled.div`  
+    text-align: center;
+    background-color: ${({ theme }) => theme.colors["base-blue"]};   
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    gap: .5rem;
+
+    max-width: 15rem;
     
-    gap: 1rem;
-
-    > span {
-        height: 112px;
-        min-width: 120px;
-        border-radius: 50%;
-
-        background: ${({ theme }) => theme.colors["base-blue-black"]};
-        color: ${({ theme }) => theme.colors["base-white"]};
-
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        font-size: 3.5rem;
-
+    strong {
+        width: 10rem;
     }
 
-   > div {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: .75rem;
-        color: ${({ theme }) => theme.colors["base-white"]};
+    p {
+        font-size: .9rem;
+    }
 
-        strong {
-            font-size: 2rem;
-        }
-   }
-
-   & + div {
-    margin-top: 2rem    ;
-   }
-
-   @media(max-width: 520px) {
-        padding: 1rem;
-
-        span {
-            height: 70px;
-            min-width: 66px;
-            font-size: 3rem;
-        }
-   }
+    @media(max-width: 520px) {
+       gap: 2rem;
+    }
 `
+
+

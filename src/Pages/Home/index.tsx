@@ -1,5 +1,5 @@
 import { Banner } from "./Components/Banner";
-import { CommonQuestions } from "./Components/CommonQuestions";
+import { AboutForyou } from "./Components/AboutForyou";
 import { HowItWorks } from "./Components/HowItWorks";
 import { Info } from "./Components/Infos";
 import { Simulator } from "../../components/Simulator";
@@ -15,9 +15,8 @@ export function Home() {
         <HomeContainer>
             <Banner/>
             <Info/>
+            <AboutForyou />
             <HowItWorks/>
-            <Simulator/>
-            <CommonQuestions />
         </HomeContainer>
     )
 }

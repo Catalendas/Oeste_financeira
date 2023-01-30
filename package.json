@@ -10,7 +10,6 @@
   },
   "dependencies": {
     "@hookform/resolvers": "^2.9.10",
-    "@radix-ui/react-accordion": "^1.0.1",
     "@radix-ui/react-alert-dialog": "^1.0.2",
     "@radix-ui/react-radio-group": "^1.1.0",
     "@types/node": "^18.11.18",
