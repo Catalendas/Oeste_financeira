@@ -39,6 +39,14 @@ export const FooterLinks = styled.div`
         grid-gap: 4rem;
         padding-bottom: 2rem;
         border-bottom: 1px solid;
+
+        @media(max-width: 520px) {
+            display: flex;
+            flex-direction: column;
+            padding: 2rem;
+
+            
+        }
 `
 
 export const ContactComponent = styled.a`
@@ -64,6 +72,10 @@ export const ContactComponent = styled.a`
         border-color: #5B5E62;
         color: #5B5E62;
     }
+
+    @media(max-width: 520px) {
+        align-items: flex-start;
+    }
 `
 
 export const SocialLinks = styled.div`
@@ -84,5 +96,36 @@ export const SocialLinks = styled.div`
 `
 
 export const BussinesInformation = styled.div`
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    
+    > div {
+        display: flex;
+        align-items: center;
 
+        div {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+    }
+
+    @media(max-width: 520px) {
+        font-size: .8rem;
+    }
+`
+
+export const FooterDirectSecuryt = styled.div`
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+
+    a {
+        border-bottom: 1px solid;
+    }
+
+    @media(max-width: 520px) {
+        flex-direction:column ;
+        gap: 3em;
+    }
 `

@@ -38,11 +38,6 @@ export function CommonQuestions() {
                         </AccordionItem>
                     </AccordionRoot>        
                 </div>
-
-            
-                <div>
-                    <img src={girl} alt="Avatar da pagina"/>
-                </div>
             </CommonQuestionsContent>
           
         </CommonQuestionsContainer>

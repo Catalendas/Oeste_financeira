@@ -2,14 +2,13 @@ import styled from "styled-components";
 
 export const HeaderContainer = styled.header`
     width: 100%;
-    height: 6.5rem;
-    background: ${({ theme }) => theme.colors["base-blue"]};
+    height: 5rem;
     
     display: flex;
     align-items: center;
 
     font-weight: bold;
-    color: ${({ theme }) => theme.colors["base-white"]};
+    color: ${({ theme }) => theme.colors["base-blue"]};
 
     list-style: none;
 
@@ -18,8 +17,6 @@ export const HeaderContainer = styled.header`
         display: flex;
         align-items: center;
         justify-content: space-between;
-
-        
 
         a {
             display: flex;
@@ -33,9 +30,7 @@ export const HeaderContainer = styled.header`
 
         svg {
                 display: none;
-            }
-
-        
+            }  
         
     }
 
@@ -56,16 +51,36 @@ export const HeaderLinks = styled.nav`
         ul {
 
             display: flex;
-            gap: 0.75rem;
+            gap: 2rem;
             list-style: none;
 
                 li {
-                    &:hover {
-                    color: ${({ theme }) => theme.colors["base-hover"]};
-                    transition: .3s;
+                        a {
+                            position: relative;
+                            
+
+                            &::after {
+                                content: "";
+                                background-color: ${({ theme }) => theme.colors["base-blue"]};
+                                height: 3px;
+                                width: 0;
+                                position: absolute;
+                                left: 0;                
+                                bottom: -10px;
+                                transition: .3s;
+                            }       
+
+                            &:hover::after {
+                                width: 100%;
+                            }
+
+                            svg {
+                                background-color: ${({ theme }) => theme.colors["base-blue"]};
+                            }
+                        }
+
                 }
-            }
-    }
+    }   
 
     @media(max-width: 520px) {
         display: none;

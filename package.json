@@ -21,7 +21,6 @@
     "react-hook-form": "^7.42.0",
     "react-router-dom": "^6.5.0",
     "styled-components": "^5.3.6",
-    "swiper": "^8.4.5",
     "zod": "^3.20.2"
   },
   "devDependencies": {

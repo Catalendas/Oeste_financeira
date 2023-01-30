@@ -38,8 +38,34 @@ export const SimulatorTitleContainer = styled.div`
     width: 30rem;
 
     h2 {
-        font-size: 5rem;
-        color: ${({ theme }) => theme.colors["base-blue"]};
+        font-size: 3rem;
+        color: ${({ theme }) => theme.colors["base-white"]};
+    }
+
+    p {
+        font-size: 1.5rem;
+        margin-top: 1rem;
+        color: ${({ theme }) => theme.colors["base-white"]};
+    }
+
+    div {
+        display: flex;
+        gap: 1.5rem;
+        margin-top: 2rem;
+
+        span {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: .5rem;
+            color: ${({ theme }) => theme.colors["base-blue"]};
+
+            svg {
+                border-bottom: 1px solid;
+                
+            }
+        }
     }
 
     @media(max-width: 520px) {
@@ -56,19 +82,13 @@ export const SimulatorTitleContainer = styled.div`
 export const CardSimulator = styled.div`
         display: flex;
         align-items: center;
-
-        @media(max-width: 520px) {
-            img {
-                display: none;
-            }
-        }
 `
 
 export const SimulatorCard = styled.div`
         width: 20rem;
         height: 100%;
-
         border-bottom: 1px solid gray;
+        background: ${({ theme }) => theme.colors["base-white"]};
 
         display: flex;
         flex-direction: column;        
@@ -79,7 +99,7 @@ export const SimulatorCard = styled.div`
         padding: 1rem;
     
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        border-radius: 1rem;    
+        border-radius: 0 1rem;    
 `
 
 export const FormSimulator = styled.div`
@@ -87,6 +107,7 @@ export const FormSimulator = styled.div`
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    
 
     gap: 1rem;
 

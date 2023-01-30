@@ -50,10 +50,7 @@ export function RegisterModal({ range, rate}:RegisterModalProps) {
                 rate: rate
             })
         console.log(data)
-    }   
-
-   
-    
+    }    
 
     return (
         <AlertDialog.Portal>

@@ -1,7 +1,7 @@
 import { HeaderContainer, HeaderLinks } from "./styled";
 import Logo from "../../assets/logo.png"
 import { NavLink } from "react-router-dom";
-import { TextAlignRight } from "phosphor-react";
+import { FacebookLogo, InstagramLogo, TextAlignRight } from "phosphor-react";
 
 interface HeaderProps {
     setMenuIsVisible: (state:boolean) => void
@@ -13,8 +13,7 @@ export function Header({ setMenuIsVisible }: HeaderProps) {
             <div className="container">
                 <div>
                     <NavLink to="/" >
-                        <img src={Logo} alt="Logo"/>
-                        <span>Oeste Financeira</span>
+                        <span>Oestecredi</span>
                     </NavLink>
                 </div>
 

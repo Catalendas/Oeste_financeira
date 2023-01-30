@@ -6,7 +6,6 @@ export function HowItWorks(){
     return (
         <HowItWorksContainer >
             <div className="container">
-                <img src={GirlEngine} alt="Avatar da pagina"/>
 
                 <Description>
                     <h2>Como Funciona?</h2>

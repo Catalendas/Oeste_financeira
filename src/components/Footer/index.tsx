@@ -1,6 +1,7 @@
 import { FacebookLogo, InstagramLogo, MapPin, WhatsappLogo } from "phosphor-react";
-import { BussinesInformation, ContactComponent, FooterContainer, FooterContent, FooterLinks, SocialLinks } from "./styled";
-
+import { BussinesInformation, ContactComponent, FooterContainer, FooterContent, FooterDirectSecuryt, FooterLinks, SocialLinks } from "./styled";
+import Logo from "../../assets/logo.png"
+import { NavLink } from "react-router-dom";
 
 export function Footer() {
     return (
@@ -41,7 +42,27 @@ export function Footer() {
                         </SocialLinks>
                 </FooterLinks>
                 <BussinesInformation className="container">
-                    
+                  <div>
+                    <img src={Logo} alt="Logo" />
+                    <div>
+                        <span>@ 2023 Oestecredi. CNPJ xxxxxxxxxxx/xxx</span>
+                        <span>R. Floriano Peixoto, 625 - Centro, Santa Bárbara d'Oeste - SP, 13450-023</span>
+                    </div>
+                  </div>
+
+                    <FooterDirectSecuryt>
+                        <NavLink to="#">
+                            Politicas de privacidade
+                        </NavLink>
+
+                        <NavLink to="#">
+                            Código de defesa do consumidor
+                        </NavLink>
+
+                        <NavLink to="#">
+                            Política de segurança
+                        </NavLink>
+                    </FooterDirectSecuryt>
                 </BussinesInformation>
                
             </FooterContent>

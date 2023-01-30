@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { 
     SimulatorContainer, 
     CardSimulator, 
@@ -13,9 +13,9 @@ import {
 } from "./styled";
 import girl from "../../assets/girlsimulation.webp"
 import { priceFormatter } from "../../utils/formatedMoney";
-import { SimulationButton } from "../SimulationButton";
 import * as AlertDialog from "@radix-ui/react-alert-dialog"
 import { RegisterModal } from "./registerModal";
+import { AirplaneTilt, HouseLine, NewspaperClipping, PlusCircle } from "phosphor-react";
 
 export function Simulator() {
     const [ rangeValue, setRengeValue] = useState([2000])
@@ -38,16 +38,21 @@ export function Simulator() {
 
     return (
         <SimulatorContainer className="container">
-            <h2>Simular agora</h2>
             
             <SimulatorContent>
                 
                 <SimulatorTitleContainer>
-                    <h2>Qual o tamanho do seu sonho?</h2>
+                    <h2>Empréstimo consignado fácil e rápido é com a Oestecredi!</h2>
+                    <p>O nosso empréstimo pessoal para os servidores públicos federais e militares foi feito para você fazer tudo o que precisa.</p>
+                    <div>
+                        <span><NewspaperClipping size={32} /> Pagar as contas</span>
+                        <span><HouseLine size={32} /> Construir a casa</span>
+                        <span><AirplaneTilt size={32} /> Viajar</span>
+                        <span><PlusCircle size={32} /> E muito mais</span>
+                    </div>
                 </SimulatorTitleContainer>            
 
                 <CardSimulator>
-                    <img src={girl} alt="Avatar da pagina"/>
 
                     <SimulatorCard>
 
