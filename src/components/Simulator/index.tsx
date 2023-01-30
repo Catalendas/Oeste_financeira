@@ -42,7 +42,7 @@ export function Simulator() {
             <SimulatorContent>
                 
                 <SimulatorTitleContainer>
-                    <h2>Empréstimo consignado fácil e rápido é com a Oestecredi!</h2>
+                    <h2>Empréstimo consignado fácil e rápido é com a Oestecred!</h2>
                     <p>O nosso empréstimo pessoal para os servidores públicos federais e militares foi feito para você fazer tudo o que precisa.</p>
                     <div>
                         <span><NewspaperClipping size={32} /> Pagar as contas</span>

@@ -13,7 +13,7 @@ export function Header({ setMenuIsVisible }: HeaderProps) {
             <div className="container">
                 <div>
                     <NavLink to="/" >
-                        <span>Oestecredi</span>
+                        <span>Oestecred</span>
                     </NavLink>
                 </div>
 
@@ -41,13 +41,20 @@ export function Header({ setMenuIsVisible }: HeaderProps) {
                         </li>
                         <li>
                             <NavLink to="/cartaoconsignado">
-                                Cartão de Crédito Consignado
+                                Cartão Consignado
                             </NavLink>
                         </li>
                         <li>
                             <NavLink to="/sobrenos">
                                 Sobre nós
                             </NavLink>
+                        </li>
+                        <li>|</li>
+                        <li>
+                            <FacebookLogo size={20}/>
+                        </li>
+                        <li>
+                            <InstagramLogo size={20}/>
                         </li>
                     </ul>
                 </HeaderLinks>

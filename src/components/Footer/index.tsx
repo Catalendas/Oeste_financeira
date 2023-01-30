@@ -45,7 +45,7 @@ export function Footer() {
                   <div>
                     <img src={Logo} alt="Logo" />
                     <div>
-                        <span>@ 2023 Oestecredi. CNPJ xxxxxxxxxxx/xxx</span>
+                        <span>@ 2023 Oestecred. CNPJ xxxxxxxxxxx/xxx</span>
                         <span>R. Floriano Peixoto, 625 - Centro, Santa Bárbara d'Oeste - SP, 13450-023</span>
                     </div>
                   </div>

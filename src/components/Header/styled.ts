@@ -21,14 +21,10 @@ export const HeaderContainer = styled.header`
         a {
             display: flex;
             align-items: center;
-
-            img {
-                width: 5rem;
-                height: 5rem;
-            }               
+            justify-content: center;
         }
 
-        svg {
+        > svg {
                 display: none;
             }  
         
@@ -51,13 +47,15 @@ export const HeaderLinks = styled.nav`
         ul {
 
             display: flex;
+            align-items: center;
             gap: 2rem;
             list-style: none;
 
                 li {
                         a {
                             position: relative;
-                            
+                            text-transform: uppercase;
+                            font-weight: 400;
 
                             &::after {
                                 content: "";
@@ -76,6 +74,11 @@ export const HeaderLinks = styled.nav`
 
                             svg {
                                 background-color: ${({ theme }) => theme.colors["base-blue"]};
+                                transition: .3s;
+
+                                &:hover {
+                                    background-color: ${({ theme }) => theme.colors["base-blue-black"]};
+                                }
                             }
                         }
 
