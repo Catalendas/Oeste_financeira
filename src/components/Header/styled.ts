@@ -39,7 +39,6 @@ export const HeaderContainer = styled.header`
 
             > svg {
                 display: block;
-                border: 1px solid;
             }
         }
     }

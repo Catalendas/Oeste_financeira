@@ -2,7 +2,7 @@ import styled from "styled-components";
 import * as RadioGroup from "@radix-ui/react-radio-group"
 
 export const SimulatorContainer = styled.div`    
-    height: 30rem;
+    height: 100%;
     padding: 1rem;
     display: flex;
     justify-content: center;
@@ -72,6 +72,7 @@ export const SimulatorTitleContainer = styled.div`
         width: 20rem;
         text-align: center;
         margin-bottom: 2rem;
+        margin-top: 6rem;
 
         h2 {
             font-size: 2rem;
