@@ -10,55 +10,101 @@ export const BannerPage = styled.div`
     background: ${({ theme }) => theme.colors["base-blue"]};
     
     width: 100%;
-    height: 30rem;
+    
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: .75rem;
+    > div {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+
+    }
+
+    
 
     color: ${({ theme }) => theme.colors["base-white"]};
 
     h2 {
         font-size: 3rem;
     }
+    
 
     @media(max-width: 520px) {
+        height: 100%;
         background-size: cover;
         text-align: center;
+        flex-direction: column;
     }
 `
 
-export const CardContainer = styled.div`
-    
-
+export const TilteContainer = styled.div`
     display: flex;
     flex-direction: column;
+    gap: 2rem;
+    width: 23rem;
+        span {
+            font-size: 2rem;
+        }
+`
+
+export const ImageContainer = styled.div`
+    display: flex;
     align-items: center;
-    margin-top: 4rem;
+    justify-content: center;
+    height: 28rem;
 
-    margin-bottom: 4rem;
+    img {
+            width: 25rem;
+            height: 25rem;
+        }
+`
 
-    > h2 {
-        font-size: 2rem;
-        margin-bottom: 4rem;
-    }
+export const AlertContainer = styled.div`
+    width: 100%;
 
-    div {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.75rem;
+    color: ${({ theme }) => theme.colors["base-blue"]};
+`
+
+export const Navigator = styled.div`
+    background-color: ${({ theme }) => theme.colors["base-blue-black"]};
+    color: ${({ theme }) => theme.colors["base-white"]};
+    
+    > div {
         display: flex;
+        flex-direction: column;
         gap: 2rem;
-    }
-
-    @media(max-width: 520px) {
-
-        > h2 {
-            font-size: 1.5rem;
-            text-align: center;
-        }
-
+        padding-top: 1rem;
+        
         div {
-            flex-direction: column;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 1rem;
         }
     }
+
+
+    h3 {
+        font-weight: 400;
+        font-size: 2.5rem;
+    }
+`
+
+export const NavigatorLink = styled.div`
+
+    color: ${({ theme }) => theme.colors["base-blue-black"]};
+    background-color: ${({ theme }) => theme.colors["base-white"]};
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 2rem;
+    border-radius: 6px;
+
+    width: 19.5rem;
+    height: 3.5rem;
 `
