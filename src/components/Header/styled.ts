@@ -32,11 +32,14 @@ export const HeaderContainer = styled.header`
 
 
     @media(max-width: 520px) {
+        
         div {
-            padding: 0 2rem 0 0;
+            padding: 0 2rem 0 2rem;
+           
 
             > svg {
                 display: block;
+                border: 1px solid;
             }
         }
     }

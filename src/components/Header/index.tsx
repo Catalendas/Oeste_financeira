@@ -59,7 +59,9 @@ export function Header({ setMenuIsVisible }: HeaderProps) {
                     </ul>
                 </HeaderLinks>
 
-                <TextAlignRight size={50} onClick={() => setMenuIsVisible(true)}/>
+                <div >
+                    <TextAlignRight size={50} onClick={() => setMenuIsVisible(true)}/>
+                </div>
             </div>
         </HeaderContainer>
     )
