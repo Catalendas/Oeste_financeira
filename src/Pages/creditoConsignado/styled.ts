@@ -224,6 +224,8 @@ export const Option = styled.div`
         background-color: ${({ theme }) => theme.colors["base-blue"]};
         width: 3px;
         height: 10rem;
+        margin-top: .75rem;
+        margin-bottom: .75rem;
     }
 
     &:last-child::after {
