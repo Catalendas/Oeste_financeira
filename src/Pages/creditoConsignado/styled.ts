@@ -108,3 +108,11 @@ export const NavigatorLink = styled.div`
     width: 19.5rem;
     height: 3.5rem;
 `
+
+export const AboutProductContainer = styled.div`
+
+`
+
+export const AboutProduct = styled.div`
+    
+`

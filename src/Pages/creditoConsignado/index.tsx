@@ -1,4 +1,4 @@
-import { AlertContainer, BannerPage, CreditoConsignadoContainer, ImageContainer, Navigator, NavigatorLink, TilteContainer} from "./styled";
+import { AboutProduct, AboutProductContainer, AlertContainer, BannerPage, CreditoConsignadoContainer, ImageContainer, Navigator, NavigatorLink, TilteContainer} from "./styled";
 import homen from "../../assets/homen.webp"
 import { ButtonSimulator } from "../../components/Simulator/styled";
 import { CaretRight, ChatDots, CurrencyDollarSimple, WarningCircle } from "phosphor-react";
@@ -51,9 +51,11 @@ export function CreditoConsignado() {
                 </div>
             </Navigator>
 
-            <div>
-                faf
-            </div>
+            <AboutProductContainer>
+                <AboutProduct>
+                    
+                </AboutProduct>
+            </AboutProductContainer>
             
         </CreditoConsignadoContainer>
     )
