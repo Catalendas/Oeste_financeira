@@ -9,12 +9,13 @@ interface SimulationButtonProps {
     size?: number
     type?: "submit" | "button" 
     isInteractile?: boolean
+    link?: string
 }
 
-export function SimulationButton({icon, text, color, size, type, isInteractile }: SimulationButtonProps) {
+export function SimulationButton({icon, text, color, size, type, isInteractile, link }: SimulationButtonProps) {
     return (
         <ButtonContainer type={type ? type : "button"} color={color} disabled={isInteractile}>
-            {icon}{text}
+            {icon}{text}        
         </ButtonContainer>
     )
 }

@@ -11,7 +11,6 @@ export const Overlay = styled(AlertDialog.Overlay)`
     height: 100vh;
     width: 100vw;
     inset: 0;
-
 `
 
 export const RegisterModalContent = styled(AlertDialog.Content)<OverlayProps>`
