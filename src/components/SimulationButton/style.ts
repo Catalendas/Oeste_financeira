@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 interface ButtonContainerProsp {
     size?: number
@@ -30,4 +30,8 @@ export const ButtonContainer = styled.button<ButtonContainerProsp>`
     &:disabled {
         background: ${({ theme }) => theme.colors["base-hover"]};
     }
+
+    ${({ size }) => size && css`
+        width: ${size}rem;
+    ` }
 `

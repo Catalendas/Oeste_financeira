@@ -5,6 +5,8 @@ import { Navigator } from "./components/NavigatorContainer";
 import { AboutProduct } from "./components/AboutProductContainer";
 import { MultStep } from "./components/MultStep";
 import { Cost } from "./components/Cost";
+import { Table } from "./components/Table";
+import { Refin } from "./components/Refin";
 
  
 export function CreditoConsignado() {
@@ -23,15 +25,13 @@ export function CreditoConsignado() {
                 </div>
             </BannerPage>
 
-
-           <Navigator />
-
+            <Navigator />
             <AboutProduct />
             <MultStep />
             <Cost />
-
-            
-            
+            <Table />
+            <Refin />
+   
         </CreditoConsignadoContainer>
     )
 }

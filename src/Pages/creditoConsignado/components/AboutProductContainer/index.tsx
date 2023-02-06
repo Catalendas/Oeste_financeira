@@ -10,7 +10,7 @@ export function AboutProduct() {
                 <AboutProductTitle>
                     <h2>O que é empréstimo consignado?</h2>
                     <SimulationButton link="https://api.whatsapp.com/send?phone=5519993178152" text="Contrate agora" color="blue"/>
-                    <a href="https://api.whatsapp.com/send?phone=5519993178152">É Servidor publico? ligue para (19)3455-2541</a>
+                    <a target="_blank" href="https://api.whatsapp.com/send?phone=551934552541">É Servidor publico? ligue para (19)3455-2541</a>
                 </AboutProductTitle>
                 <AboutProducContet>
                     <AboutProductCard>

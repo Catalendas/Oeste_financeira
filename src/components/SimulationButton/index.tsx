@@ -14,7 +14,7 @@ interface SimulationButtonProps {
 
 export function SimulationButton({icon, text, color, size, type, isInteractile, link }: SimulationButtonProps) {
     return (
-        <ButtonContainer type={type ? type : "button"} color={color} disabled={isInteractile}>
+        <ButtonContainer type={type ? type : "button"} color={color} disabled={isInteractile} size={size}>
             {icon}{text}        
         </ButtonContainer>
     )
