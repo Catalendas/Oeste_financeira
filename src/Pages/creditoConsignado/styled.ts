@@ -33,7 +33,14 @@ export const BannerPage = styled.div`
         height: 100%;
         background-size: cover;
         text-align: center;
+        justify-content: center;
         flex-direction: column;
+
+        div {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
     }
 `
 
@@ -42,9 +49,16 @@ export const TilteContainer = styled.div`
     flex-direction: column;
     gap: 2rem;
     width: 23rem;
-        span {
-            font-size: 2rem;
-        }
+
+    span {
+        font-size: 2rem;
+    }
+
+    @media(max-width: 520px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 `
 
 export const ImageContainer = styled.div`
@@ -57,7 +71,26 @@ export const ImageContainer = styled.div`
             width: 25rem;
             height: 25rem;
         }
+
+        @media(max-width: 520px) {
+            
+            img {
+                width: 23rem;
+                height: 23rem;
+            }
+        }
 `
 
-
+export const AcordionContainer = styled.div`
+    margin-bottom: 7rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    
+    h2 {
+        font-weight: 400;
+        font-size: 2rem;
+        color: ${({ theme }) => theme.colors["base-grey"]};
+    }
+`
 

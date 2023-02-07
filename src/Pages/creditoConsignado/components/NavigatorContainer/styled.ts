@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import  {Link}  from "react-scroll";
 
 export const AlertContainer = styled.div`
     width: 100%;
@@ -32,9 +33,21 @@ export const NavigatorContainer = styled.div`
         font-weight: 400;
         font-size: 2.5rem;
     }
+
+    @media(max-width: 520px) {
+
+        > div {
+
+            div {
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
 `
 
-export const NavigatorLink = styled.div`
+export const NavigatorLink = styled(Link)`
 
     color: ${({ theme }) => theme.colors["base-blue-black"]};
     background-color: ${({ theme }) => theme.colors["base-white"]};

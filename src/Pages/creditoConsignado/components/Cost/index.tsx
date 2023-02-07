@@ -2,7 +2,7 @@ import { CostContainer, CostTitle, CostValue, Value, CostTable } from "./style";
 
 export function Cost() {
     return (
-        <CostContainer className="container">
+        <CostContainer className="container" id="cost">
             <CostTitle>
                 <h2>Seu empréstimo consignado vai custar quanto?</h2>
                 <p>Transparência é com a gente! Consulte previamente todas as condições do seu consignado antes de fechar o acordo. As informações estão descritas no contrato. Veja um exemplo da aplicação de taxas:</p>

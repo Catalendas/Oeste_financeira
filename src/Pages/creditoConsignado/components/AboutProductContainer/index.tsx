@@ -2,14 +2,28 @@ import { AboutProducContet, AboutProductCard, AboutProductContainer, AboutProduc
 import * as AlertDialog from "@radix-ui/react-alert-dialog"
 import { SimulationButton } from "../../../../components/SimulationButton";
 import { X } from "phosphor-react";
+import { RegisterModal } from "../../../../components/Simulator/registerModal";
+import { ButtonSimulator } from "../../../../components/Simulator/styled";
 
 export function AboutProduct() {
+
+    const ratePrice = 0
+    const rangeValue: [] = []
+
     return (
-        <>
-            <AboutProductContainer className="container">
-                <AboutProductTitle>
+        <>        
+            <AboutProductContainer className="container" id="information">
+                <AboutProductTitle >
                     <h2>O que é empréstimo consignado?</h2>
-                    <SimulationButton link="https://api.whatsapp.com/send?phone=5519993178152" text="Contrate agora" color="blue"/>
+
+                    <AlertDialog.Root>
+                        <AlertDialog.Trigger asChild>
+                            <ButtonSimulator color="blue">Contrate agora</ButtonSimulator>
+                        </AlertDialog.Trigger>
+
+                        <RegisterModal rate={ratePrice} range={rangeValue}/>
+                    </AlertDialog.Root>
+                    
                     <a target="_blank" href="https://api.whatsapp.com/send?phone=551934552541">É Servidor publico? ligue para (19)3455-2541</a>
                 </AboutProductTitle>
                 <AboutProducContet>
@@ -21,8 +35,7 @@ export function AboutProduct() {
                                 <span>Confira a lista de convênios</span>
                             </Trigger>
                             <Overlay/>
-
-                            
+                      
                             <AlertDialogContainer>
                                 <Cancel>
                                     <X/>

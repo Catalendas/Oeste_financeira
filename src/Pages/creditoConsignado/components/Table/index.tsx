@@ -1,9 +1,15 @@
 import { WhatsappLogo } from "phosphor-react";
 import { SimulationButton } from "../../../../components/SimulationButton";
-import { ButtonSimulator } from "../../../../components/Simulator/styled";
 import { ContracHere, TableContainer } from "./styled";
+import * as AlertDialog from "@radix-ui/react-alert-dialog"
+import { RegisterModal } from "../../../../components/Simulator/registerModal";
+import { ButtonSimulator } from "../../../../components/Simulator/styled";
 
 export function Table(){
+
+    const ratePrice = 0
+    const rangeValue: [] = []
+
     return (
         <div className="container">
             <TableContainer >
@@ -39,8 +45,18 @@ export function Table(){
             <ContracHere>
                 <a target="_blank" href="https://api.whatsapp.com/send?phone=551934552541&text=Sou%20servidor%20publico%20e%20gostaria%20de%20fazer%20o%20empr%C3%A9stimo%20consignado">É servidor publico? ligue para (19)3455-2541</a>
 
-                <SimulationButton size={20} text="Contrate agora" color="blue"/>
-                <SimulationButton icon={<WhatsappLogo size={30}/>} text="Entre em contato agora"  color="green" size={20}/>
+                <AlertDialog.Root>
+                    <AlertDialog.Trigger asChild>
+                        <ButtonSimulator color="blue">Contrate agora</ButtonSimulator>
+                    </AlertDialog.Trigger>
+
+                    <RegisterModal rate={ratePrice} range={rangeValue}/>
+                </AlertDialog.Root>
+
+                
+                <div>
+                    <a target="_blank" href="https://api.whatsapp.com/send?phone=551934552541&text=Sou%20servidor%20publico%20e%20gostaria%20de%20fazer%20o%20empr%C3%A9stimo%20consignado"><SimulationButton icon={<WhatsappLogo size={30}/>} text="Entre em contato agora"  color="green" size={20}/></a>  
+                </div>  
             </ContracHere>
         </div>
     )

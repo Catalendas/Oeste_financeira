@@ -14,18 +14,18 @@ export function Navigator() {
                 <div className="container">
                     <h3>O que você precisa?</h3>
                     <div >          
-                        <NavigatorLink>
+                        <NavigatorLink activeClass="active" to="information" spy={true} smooth={true} offset={50} duration={500}>
                             <WarningCircle size={20} />
                             <span> Mais informações</span>
                             <CaretRight size={20} />
                         </NavigatorLink>
 
-                        <NavigatorLink>
+                        <NavigatorLink activeClass="active" to="cost" spy={true} smooth={true} offset={50} duration={500}>
                             <CurrencyDollarSimple size={20} />
                             <span>Simular e contratar</span>
                             <CaretRight size={20} />
                         </NavigatorLink>
-                        <NavigatorLink>
+                        <NavigatorLink activeClass="active" to="refin" spy={true} smooth={true} offset={50} duration={500}>
                             <ChatDots size={20} />
                             <span>Atendimento</span>
                             <CaretRight size={20} />

@@ -42,10 +42,15 @@ export const ContracHere = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 5rem;
 
-    a {
+    > a {
         text-align: center;
         text-decoration: underline;
         color: ${({ theme }) => theme.colors["base-blue-black"]};
+    }
+
+    @media(max-width: 520px) {
+        flex-direction: column;
     }
 `

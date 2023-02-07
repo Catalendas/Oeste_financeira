@@ -18,6 +18,13 @@ export const CostTitle = styled.div`
     p {
         font-size: 1.2rem;
     }
+
+    @media(max-width: 520px) {
+
+        h2 {
+            font-size: 2rem;
+        }
+    }
 `
 
 export const CostValue = styled.div`
@@ -57,6 +64,10 @@ export const Value = styled.span<ValueProps>`
     color: white;
     background-color: ${({ theme, color }) => theme.colors[`base-${color}`]};
     border-radius: 1rem;
+
+    @media(max-width: 520px) {
+        width: 10rem
+    }
 `
 
 export const CostTable = styled.table`

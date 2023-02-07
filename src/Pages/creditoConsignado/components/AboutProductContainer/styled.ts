@@ -2,42 +2,54 @@ import styled from "styled-components"
 import * as AlertDialog from "@radix-ui/react-alert-dialog"
 
 export const AboutProductContainer = styled.div`
-display: flex;
-justify-content: space-between;
-margin-top: 5rem;
-margin-bottom: 10rem;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5rem;
+    margin-bottom: 10rem;
+
+    @media(max-width: 520px) {
+        flex-direction: column;
+
+    }
 `
 
 export const AboutProductTitle = styled.div`
-display: flex;
-flex-direction: column;
-gap: 2rem;
-width: 18rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 18rem;
 
-h2 {
-    font-weight: 400;
-    font-size: 2rem;
-    color: ${({ theme }) => theme.colors["base-grey"]};
-}
+    
 
-a {
-    align-items: center;
-}
+    h2 {
+        font-weight: 400;
+        font-size: 2rem;
+        color: ${({ theme }) => theme.colors["base-grey"]};
+    }
+
+    a {
+        align-items: center;
+    }
 
 `
 
 export const AboutProducContet = styled.div`
-display: grid;
-grid-template-columns: repeat(2, 1fr);
-grid-gap: 1rem;
-width: 40rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    width: 40rem;
+
+    @media(max-width: 520px) {
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+    }
 `
 
 export const AboutProductCard = styled.div`
-display: flex;
-flex-direction: column;
-gap: .75rem;
-width: 12rem;
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+    width: 12rem;
 
 span {
 

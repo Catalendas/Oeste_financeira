@@ -36,6 +36,22 @@ export const Multstep = styled.div`
          }
     }
 
+    @media(max-width: 520px) {
+
+        h2 {
+            font-size: 2rem
+        }
+
+        > div {
+
+            flex-direction: column;
+
+            &::after {
+                display: none;
+        
+            }
+        }
+    }
     
 `
 

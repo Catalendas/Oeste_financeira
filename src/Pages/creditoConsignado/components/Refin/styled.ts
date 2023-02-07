@@ -2,7 +2,8 @@ import styled from "styled-components";
 import Bg from "../../../../assets/background.webp"
 
 export const RefinContainer = styled.div`
-    margin-top: 10rem;
+    margin-top: 7rem;
+    margin-bottom: 7rem;
     background: url(${Bg});
     width: 100%;
     display: flex;
@@ -28,6 +29,15 @@ export const RefinContainer = styled.div`
 
     img {
         width: 30rem;
+        height: 20rem;
+    }
+
+    @media(max-width: 520px) {
+        flex-direction: column;
+    }
+
+    img {
+        width: 100%;
         height: 20rem;
     }
 `
