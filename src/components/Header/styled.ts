@@ -11,6 +11,7 @@ export const HeaderContainer = styled.header`
     color: ${({ theme }) => theme.colors["base-blue"]};
 
     list-style: none;
+   
 
     div {
 
@@ -26,6 +27,7 @@ export const HeaderContainer = styled.header`
 
         > svg {
                 display: none;
+                z-index: 2;
             }  
         
     }
@@ -34,7 +36,7 @@ export const HeaderContainer = styled.header`
     @media(max-width: 520px) {
         
         div {
-            padding: 0 2rem 0 2rem;
+            padding: 0 .75rem 0 .75rem;
            
 
             > svg {
