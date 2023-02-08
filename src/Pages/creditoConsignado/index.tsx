@@ -1,6 +1,5 @@
 import { AcordionContainer, BannerPage, CreditoConsignadoContainer,  ImageContainer,  TilteContainer } from "./styled";
-import homen from "../../assets/homen.webp"
-import { ButtonSimulator } from "../../components/Simulator/styled";
+import homen from "../../assets/homennocelular.webp"
 import { Navigator } from "./components/NavigatorContainer";
 import { AboutProduct } from "./components/AboutProductContainer";
 import { MultStep } from "./components/MultStep";

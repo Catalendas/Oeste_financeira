@@ -34,6 +34,10 @@ export const TableContainer = styled.table`
         }  
         
     }
+
+    @media(max-width: 520px){
+        padding: 0 1rem;
+    }
     
 `
 

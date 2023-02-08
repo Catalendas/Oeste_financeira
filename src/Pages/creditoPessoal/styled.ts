@@ -6,34 +6,8 @@ export const CreditoPessoalContainer = styled.section`
     width: 100%;
 `
 
-export const BannerPage = styled.div`
-    background: ${({ theme }) => `url(${Pessoal})  no-repeat center`};
-    background-size: 100%;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 30rem;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: .75rem;
-
-    color: ${({ theme }) => theme.colors["base-white"]};
-
-    h2 {
-        font-size: 3rem;
-    }
-
-    @media(max-width: 520px) {
-        background-size: cover;
-        text-align: center;
-    }
-`
-
 export const CardContainer = styled.div`
     
-
     display: flex;
     flex-direction: column;
     align-items: center;

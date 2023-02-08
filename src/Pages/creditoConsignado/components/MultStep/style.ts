@@ -38,6 +38,9 @@ export const Multstep = styled.div`
 
     @media(max-width: 520px) {
 
+        width: 100%;
+        padding: 0 1rem ;
+
         h2 {
             font-size: 2rem
         }

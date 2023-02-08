@@ -13,7 +13,7 @@ export const RefinContainer = styled.div`
 
     div {
 
-        width: 26rem;
+        width: 100%;
         padding: 1rem;
 
         h2 {
