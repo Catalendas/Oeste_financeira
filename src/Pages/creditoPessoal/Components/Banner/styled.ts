@@ -9,7 +9,7 @@ export const BannerContainer = styled.div`
     height: 420px;
 
     img {
-        width: 37rem;
+        width: 40rem;
         height: 100%;
     }
 `
