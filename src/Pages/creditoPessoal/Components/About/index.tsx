@@ -1,3 +1,4 @@
+import { SimulationButton } from "../../../../components/SimulationButton";
 import { AboutContainer, AboutOptions, AboutTitleDescription } from "./styled";
 
 export function About() {
@@ -31,7 +32,7 @@ export function About() {
                 </div>
             </AboutOptions>
 
-            
+            <SimulationButton text="Simular agora" size={20} color="blue"/>
         </AboutContainer>
     )
 }

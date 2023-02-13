@@ -28,6 +28,7 @@ export const AboutOptions = styled.div`
     grid-template-columns: repeat(2, 1fr);
     margin-top: 2rem;
     grid-row-gap: 1rem;
+    margin-bottom: 3rem;
 
     div {
 
