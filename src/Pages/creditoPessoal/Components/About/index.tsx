@@ -7,7 +7,8 @@ export function About() {
             <AboutTitleDescription>
                 <h2>O que é o empréstimo pessoal</h2>
 
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt porro praesentium dignissimos facilis eligendi modi atque quas, dicta ducimus quasi adipisci error illo natus eos nesciunt eum ipsa voluptatem veritatis!</p>
+                <p>Essa modalidade de crédito é perfeita para quem precisa de dinheiro com urgência. Com uma conta de energia em seu nome, fornecimento elétrico ativo no endereço e uma conta bancária no nome do titular da conta de energia;
+                Além disso, você terá mais facilidade para quitar seu empréstimo, pois as parcelas são debitadas direto na conta de energia. Assim você pode ter mais controle sobre suas contas e não corre o risco de pagar taxas por atraso nas parcelas. </p>
             </AboutTitleDescription>
 
             <AboutOptions>
@@ -28,7 +29,7 @@ export function About() {
 
                 <div>
                     <strong>Cliente Oeste contrata o empréstimo pessoal online</strong>
-                    <span>Tudo Feiot via WhatsApp sem saiar de casa</span>
+                    <span>Tudo Feito via WhatsApp sem saiar de casa</span>
                 </div>
             </AboutOptions>
 

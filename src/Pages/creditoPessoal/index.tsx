@@ -9,7 +9,6 @@ export function CreditoPessoal() {
             <Banner/>
             <About/>
             <Why/>
-
         </CreditoPessoalContainer>
     )
 }
