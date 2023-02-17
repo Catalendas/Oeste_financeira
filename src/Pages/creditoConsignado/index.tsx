@@ -6,7 +6,7 @@ import { MultStep } from "./components/MultStep";
 import { Cost } from "./components/Cost";
 import { Table } from "./components/Table";
 import { Refin } from "./components/Refin";
-import { Acordion } from "./components/Acordion";
+import { Acordion } from "../../components/Acordion";
 import { SimulationButton } from "../../components/SimulationButton";
 import { WhatsappLogo } from "phosphor-react";
 

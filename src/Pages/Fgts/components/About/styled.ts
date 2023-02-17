@@ -22,4 +22,8 @@ export const AboutFGTSContent = styled.div`
     p {
         font-size: 1.2rem;
     }
+
+    @media(max-width: 520px) {
+        padding: 1rem;
+    }
 `
