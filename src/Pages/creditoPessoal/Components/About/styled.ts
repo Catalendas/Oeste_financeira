@@ -2,6 +2,9 @@ import styled from "styled-components";
 
 export const AboutContainer = styled.div`
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 
     @media(max-width: 520px) {
         padding: 0 1rem;
