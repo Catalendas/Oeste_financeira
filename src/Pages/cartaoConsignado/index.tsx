@@ -1,14 +1,17 @@
-import { BannerPage, CardContainer, CartaoConsignadoContainer} from "./styled";
-import Fgts from "../../assets/fgts.webp"
-import Pessoal from "../../assets/creditopessoalbanner.webp"
-import Cartao from "../../assets/consignadobanner.webp"
-import { InfoCredt } from "../../components/InfoCredt";
-import { Card } from "../../components/Card";
-import { Simulator } from "../../components/Simulator";
+import { Abaut } from "./components/About";
+import { Banner } from "./components/Banner";
+import { Benefitis } from "./components/benfits";
+import { Layer } from "./components/Layer";
+import { CartaoConsignadoBanner } from "./styled";
+
 
 export function CartaoConsignado() {
     return (
-        <>
-        </>
+        <CartaoConsignadoBanner>
+            <Banner/>
+            <Abaut />
+            <Layer />
+            <Benefitis />
+        </CartaoConsignadoBanner>
     )
 }
