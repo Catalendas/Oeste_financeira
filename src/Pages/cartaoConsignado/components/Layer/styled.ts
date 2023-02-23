@@ -17,6 +17,15 @@ export const LayerContainer = styled.div`
 
         }
     }
+
+    @media(max-width: 520px) {
+        height: 100%;
+        padding: 1rem;
+        > div {
+            flex-direction: column;
+            gap: 1rem;
+        }
+    }
 `
 
 export const LayerOptions = styled.div`

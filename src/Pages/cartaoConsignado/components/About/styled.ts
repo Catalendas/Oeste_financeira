@@ -4,6 +4,11 @@ export const AboutContainer = styled.div`
     display: flex;
     gap: 5rem;
     margin-top: 2rem;
+
+    @media(max-width: 520px) {
+        padding: 1rem;
+        flex-direction: column;
+    }
 `
 
 export const VantageContainer = styled.div`
@@ -17,12 +22,20 @@ export const VantageContainer = styled.div`
         font-size: 2rem;
         font-weight: 400;      
     }
+
+    @media(max-width: 520px) {
+        width: 100%;
+    }
 `
 
 export const Caracteristic = styled.div`
     width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+
+    @media(max-width: 520px) {
+        grid-template-columns: repeat(1, 1fr);
+    }
 `
 
 export const CaracteristicOptions = styled.div`

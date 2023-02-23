@@ -24,4 +24,13 @@ export const BenefitisContainer = styled.div`
     img {
         width: 30rem;
     }
+
+    @media(max-width: 520px) {
+
+        padding: 1rem;
+
+        img {
+            display: none;
+        }
+    }
 `

@@ -11,6 +11,15 @@ export const BannerContainer = styled.div`
     img {
         width: 30rem;
     }
+
+    @media(max-width: 520px) {
+
+        padding: 1rem;
+
+        img {
+            display: none;
+        }
+    }
 `
 
 export const BannerTitle = styled.div`

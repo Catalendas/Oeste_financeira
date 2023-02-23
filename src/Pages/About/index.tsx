@@ -24,8 +24,6 @@ export function About() {
             <CardContainer>
                
             </CardContainer>
-
-            <Simulator/>
         </AboutContainer>
     )
 }
