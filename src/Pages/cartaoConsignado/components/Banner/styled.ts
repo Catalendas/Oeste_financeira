@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const BannerContainer = styled.div`
     background-color: ${({ theme }) => theme.colors["base-blue"]};
+    height: 30rem;
     
     > div {
         display: flex;

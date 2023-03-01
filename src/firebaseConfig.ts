@@ -13,6 +13,7 @@ const firebaseConfig = {
   };
 
 firebase.initializeApp(firebaseConfig);
+console.log()
 
 
 // Initialize Cloud Firestore and get a reference to the service

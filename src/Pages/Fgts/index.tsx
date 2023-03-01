@@ -11,7 +11,6 @@ export function Fgts() {
     return (
        <FgtsContainer>
             <Banner/>
-            <Navigator/>
             <About/>
             <Advantage/>
             <Contrate />

@@ -8,6 +8,7 @@ export const AboutContainer = styled.div`
     @media(max-width: 520px) {
         padding: 1rem;
         flex-direction: column;
+        padding: 1rem;
     }
 `
 
@@ -25,6 +26,7 @@ export const VantageContainer = styled.div`
 
     @media(max-width: 520px) {
         width: 100%;
+        padding: 1rem;
     }
 `
 
@@ -35,6 +37,7 @@ export const Caracteristic = styled.div`
 
     @media(max-width: 520px) {
         grid-template-columns: repeat(1, 1fr);
+        padding: 1rem;
     }
 `
 

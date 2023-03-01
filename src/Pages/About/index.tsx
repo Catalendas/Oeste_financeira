@@ -1,9 +1,5 @@
 import { AboutContainer, AboutContent, CardContainer } from "./styled";
 import Team from "../../assets/Oeste.webp"
-import { Card } from "../../components/Card";
-
-import Fgts from "../../assets/fgts.webp"
-import { Simulator } from "../../components/Simulator";
 
 export function About() {
     return (

@@ -23,6 +23,11 @@ export const AboutTitleDescription = styled.div`
         color: ${({ theme }) => theme.colors["base-grey"]};
         font-size: 3rem;
     }
+
+    @media(max-width: 520px) {
+        
+        padding: 1rem;
+    }
 `
 
 export const AboutOptions = styled.div`
@@ -55,5 +60,11 @@ export const AboutOptions = styled.div`
             background-color: ${({ theme }) => theme.colors["base-blue"]};
             display: block;
         }
+    }
+
+    @media(max-width: 520px) {
+        
+        padding: 1rem;
+        grid-template-columns: repeat(1, 1fr);
     }
 `

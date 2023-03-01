@@ -9,4 +9,9 @@ export const WhyContainer = styled.div`
     div {
         
     }
+
+    @media(max-width: 520px) {
+        
+        padding: 1rem;
+    }
 `

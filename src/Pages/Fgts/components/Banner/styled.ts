@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const BannerContainer = styled.div`
     background-color: ${({ theme }) => theme.colors["base-blue"]};
+    height: 30rem;
     
     > div {
         display: flex;
@@ -9,13 +10,14 @@ export const BannerContainer = styled.div`
 
         img {
             width: 30rem;
-            height: 30rem;
         }
     }
 
    
 
     @media(max-width: 520px) {
+
+        height: 100%;
         
         > div {
             flex-direction: column;
@@ -23,7 +25,6 @@ export const BannerContainer = styled.div`
             padding: 1rem;
 
             img {
-                width: 22rem;
                 display: none;
             }  
         }

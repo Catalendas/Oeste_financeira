@@ -10,6 +10,7 @@ export const BannerPage = styled.div`
     background: ${({ theme }) => theme.colors["base-blue"]};
     
     width: 100%;
+    height: 30rem;
     
 
     > div {
