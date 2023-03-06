@@ -13,7 +13,7 @@ export function Header({ setMenuIsVisible }: HeaderProps) {
             <div className="container">
                 <div>
                     <NavLink to="/" >
-                        <span>Oestecred</span>
+                        <img src={Logo} alt="" />
                     </NavLink>
                 </div>
 

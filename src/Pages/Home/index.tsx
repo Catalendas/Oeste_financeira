@@ -5,7 +5,7 @@ import { Info } from "./Components/Infos";
 import { Simulator } from "../../components/Simulator";
 import { HomeContainer} from "./styled";
 import { MenuBobile } from "../../components/MenuMobile";
-import { useState } from "react";
+
 
 
 export function Home() {
@@ -16,7 +16,6 @@ export function Home() {
             <Banner/>
             <Info/>
             <AboutForyou />
-            <HowItWorks/>
         </HomeContainer>
     )
 }
