@@ -13,7 +13,7 @@ export function AboutForyou() {
                     </TextContainer>
 
                     <SimulationOptions>
-                        <h2>É fácil, é rápido e é para você</h2>
+                        <h2>Com a Oeste tudo é melhor</h2>
                         <div>
                             <Options>
                                 <Calendar size={40}  />

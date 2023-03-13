@@ -1,6 +1,6 @@
 import { FacebookLogo, InstagramLogo, MapPin, WhatsappLogo } from "phosphor-react";
 import { BussinesInformation, ContactComponent, FooterContainer, FooterContent, FooterDirectSecuryt, FooterLinks, SocialLinks } from "./styled";
-import Logo from "../../assets/logo.png"
+import Logo from "../../assets/logo-icon.png"
 import { NavLink } from "react-router-dom";
 
 export function Footer() {

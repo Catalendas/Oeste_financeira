@@ -11,6 +11,11 @@ export const AboutForyouContainer = styled.div`
     flex-direction: column;
     padding: 2rem 0;
     font-size: 1.3rem;
+
+    > div {
+        display: flex;
+        flex-direction: column;
+    }
     
 
 

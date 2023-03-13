@@ -11,7 +11,6 @@ import {
     Results,
     ButtonSimulator
 } from "./styled";
-import girl from "../../assets/girlsimulation.webp"
 import { priceFormatter } from "../../utils/formatedMoney";
 import * as AlertDialog from "@radix-ui/react-alert-dialog"
 import { RegisterModal } from "./registerModal";
