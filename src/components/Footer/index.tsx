@@ -32,10 +32,10 @@ export function Footer() {
                         <SocialLinks>
                                 <span>Siga a Oeste</span>
                                 <div>
-                                    <a href="">
+                                    <a href="https://www.instagram.com/OestecredPromotora/">
                                         <InstagramLogo size={40} />
                                     </a>
-                                    <a href="">
+                                    <a href="https://www.facebook.com/OestecredPromotora">
                                         <FacebookLogo size={40} />
                                     </a>
                                 </div>
