@@ -9,7 +9,7 @@ export function Banner() {
                 <BannerTitle>
                     <h2>Cartão consignado</h2>
                     <span>Cartão exclusivo para aposentados, pensionistas do INSS</span>
-                    <SimulationButton text="Contrate agora" color="blue-black"/>
+                    <a href="https://wa.me/5519994508753"><SimulationButton text="Contrate agora" color="blue-black" size={20}/></a>
                 </BannerTitle>
 
                 <img src={Idosa} alt="" />

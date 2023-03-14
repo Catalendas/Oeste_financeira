@@ -40,7 +40,7 @@ export function Advantage() {
                     </AdvantageOption>
                 </div>
 
-                <a target="_blank" href="https://contrate.oestecredemprestimos.com.br/cadastro/fgts/"><SimulationButton text="Auto contratação"  color="blue-black" size={20}/></a>
+                <a target="_blank" href="https://contrate.oestecredemprestimos.com.br/"><SimulationButton text="Auto contratação"  color="blue-black" size={20}/></a>
             </div>
         </AdvantageContainer>
     )

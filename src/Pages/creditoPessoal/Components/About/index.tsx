@@ -33,7 +33,7 @@ export function About() {
                 </div>
             </AboutOptions>
 
-            <SimulationButton text="Simular agora" size={20} color="blue"/>
+            <a href="https://wa.me/5519994508753"><SimulationButton text="Simular agora" size={20} color="blue"/></a>
         </AboutContainer>
     )
 }

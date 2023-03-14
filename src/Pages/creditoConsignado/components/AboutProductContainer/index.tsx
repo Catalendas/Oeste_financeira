@@ -24,7 +24,7 @@ export function AboutProduct() {
                         <RegisterModal rate={ratePrice} range={rangeValue}/>
                     </AlertDialog.Root>
                     
-                    <a target="_blank" href="https://api.whatsapp.com/send?phone=551934552541">É Servidor publico? ligue para (19)3455-2541</a>
+                    <a target="_blank" href="https://wa.me/5519994508753">É Servidor publico? ligue para (19)3455-2541</a>
                 </AboutProductTitle>
                 <AboutProducContet>
                     <AboutProductCard>

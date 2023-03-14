@@ -19,7 +19,7 @@ export function CreditoConsignado() {
                     <TilteContainer>
                         <h2>Empréstimo Consignado</h2>
                         <span>O benefício aumentou, sua margem também! Sujeito à análise e condições do produto.</span>
-                        <a target="_blank" href="https://api.whatsapp.com/send?phone=551934552541&text=Sou%20servidor%20publico%20e%20gostaria%20de%20fazer%20o%20empr%C3%A9stimo%20consignado"><SimulationButton icon={<WhatsappLogo size={30}/>} text="Falar com um especialista"  color="green" size={20}/></a>
+                        <a target="_blank" href="https://wa.me/5519994508753"><SimulationButton icon={<WhatsappLogo size={30}/>} text="Falar com um especialista"  color="green" size={20}/></a>
                     </TilteContainer>
                     <ImageContainer>
                         <img src={homen} alt="" />

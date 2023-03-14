@@ -8,8 +8,7 @@ export function Abaut() {
             <VantageContainer>
                 <h2>Conheça as vantagens do Cartão de Crédito Consignado</h2>
                 <p>É um cartão exclusivo para aposentados, pensionistas do INSS e servidores públicos com taxas de juros muito mais baixas do que um cartão de crédito comum.</p>
-                <SimulationButton text="Contrate agora" color="blue"/>
-                <SimulationButton text="Peça pelo WhatsApp" icon={<WhatsappLogo size={36}/>} color="green"/>
+                <a href="https://wa.me/5519994508753"><SimulationButton text="Peça pelo WhatsApp" icon={<WhatsappLogo size={36}/>} color="green"/></a>
             </VantageContainer>
 
             <Caracteristic>
