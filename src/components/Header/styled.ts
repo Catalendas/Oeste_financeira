@@ -81,12 +81,7 @@ export const HeaderLinks = styled.nav`
                             }
 
                             svg {
-                                background-color: ${({ theme }) => theme.colors["base-blue"]};
                                 transition: .3s;
-
-                                &:hover {
-                                    background-color: ${({ theme }) => theme.colors["base-blue-black"]};
-                                }
                             }
                         }
 

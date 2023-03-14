@@ -2,8 +2,8 @@ import { PrivacyPolicyContainer } from "./styled";
 
  export function PrivacyPolicy(){
     return (
-        <PrivacyPolicyContainer>
-            <h2><span>Política Privacidade</span></h2>
+        <PrivacyPolicyContainer className="container">
+            <h1><span>Política Privacidade</span></h1>
 
             <p><span>A sua privacidade é importante para nós. É política do Oeste Finaceira respeitar a sua privacidade em relação a qualquer informação sua que possamos coletar no site <a href="Oeste Finaceira">Oeste Finaceira</a>, e outros sites que possuímos e operamos.</span></p>
             

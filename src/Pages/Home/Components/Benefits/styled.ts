@@ -32,4 +32,13 @@ export const BenefitisContainer = styled.div`
             }
         }
     }
+
+    @media(max-width: 520px) {
+        padding: 1rem;
+
+        > div {
+            flex-direction: column;
+            gap: 3rem;
+        }
+    }
 `

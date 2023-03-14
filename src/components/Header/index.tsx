@@ -51,10 +51,10 @@ export function Header({ setMenuIsVisible }: HeaderProps) {
                         </li>
                         <li>|</li>
                         <li>
-                            <FacebookLogo size={20}/>
+                            <a href="https://www.facebook.com/OestecredPromotora" target="_blank"><FacebookLogo size={20}/></a>
                         </li>
                         <li>
-                            <InstagramLogo size={20}/>
+                            <a href="https://www.instagram.com/OestecredPromotora/" target="_blank"><InstagramLogo size={20}/></a>
                         </li>
                     </ul>
                 </HeaderLinks>

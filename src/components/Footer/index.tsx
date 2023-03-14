@@ -51,16 +51,8 @@ export function Footer() {
                   </div>
 
                     <FooterDirectSecuryt>
-                        <NavLink to="#">
+                        <NavLink to="/politicadeprivacidade">
                             Politicas de privacidade
-                        </NavLink>
-
-                        <NavLink to="#">
-                            Código de defesa do consumidor
-                        </NavLink>
-
-                        <NavLink to="#">
-                            Política de segurança
                         </NavLink>
                     </FooterDirectSecuryt>
                 </BussinesInformation>

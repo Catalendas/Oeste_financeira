@@ -26,4 +26,15 @@ export const AutoContractContainer = styled.div`
             gap: 1rem;
         }
     }
+
+    @media(max-width: 520px) {
+
+        img {
+            display: none;
+        }
+
+        > div {
+            padding: 1rem;
+        }
+    }
 `
