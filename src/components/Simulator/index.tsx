@@ -17,8 +17,12 @@ import { RegisterModal } from "./registerModal";
 import { AirplaneTilt, HouseLine, NewspaperClipping, PlusCircle } from "phosphor-react";
 
 export function Simulator() {
+
     const [ rangeValue, setRengeValue] = useState([2000])
     const [ ratePrice, setRatePrice] = useState(0)
+
+    
+
 
     function handlePlus(event: any) {
         const radioValue = event.target.value
@@ -64,14 +68,14 @@ export function Simulator() {
                             </section>
 
                             <OptionsContainer>
-                                <OptionsButton value="0.097" onClick={handlePlus}>12</OptionsButton>
-                                <OptionsButton value="0.054" onClick={handlePlus}>24</OptionsButton>
-                                <OptionsButton value="0.042" onClick={handlePlus}>36</OptionsButton>
-                                <OptionsButton value="0.035" onClick={handlePlus}>48</OptionsButton>
-                                <OptionsButton value="0.031" onClick={handlePlus}>60</OptionsButton>
-                                <OptionsButton value="0.028" onClick={handlePlus}>72</OptionsButton>
-                                <OptionsButton value="0.027" onClick={handlePlus}>84</OptionsButton>
-                                <OptionsButton value="0.026" onClick={handlePlus}>96</OptionsButton>
+                                <OptionsButton checked={rangeValue ? false : true} value="0.097" onClick={handlePlus}>12</OptionsButton>
+                                <OptionsButton checked={rangeValue ? false : true} value="0.054" onClick={handlePlus}>24</OptionsButton>
+                                <OptionsButton checked={rangeValue ? false : true} value="0.042" onClick={handlePlus}>36</OptionsButton>
+                                <OptionsButton checked={rangeValue ? false : true} value="0.035" onClick={handlePlus}>48</OptionsButton>
+                                <OptionsButton checked={rangeValue ? false : true} value="0.031" onClick={handlePlus}>60</OptionsButton>
+                                <OptionsButton checked={rangeValue ? false : true} value="0.028" onClick={handlePlus}>72</OptionsButton>
+                                <OptionsButton checked={rangeValue ? false : true} value="0.027" onClick={handlePlus}>84</OptionsButton>
+                                <OptionsButton checked={rangeValue ? false : true} value="0.026" onClick={handlePlus}>96</OptionsButton>
                             </OptionsContainer>
 
                             <Results>

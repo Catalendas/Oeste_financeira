@@ -149,6 +149,8 @@ export const OptionsContainer = styled(RadioGroup.Root)`
     grid-gap: 1rem;
 `
 
+
+
 export const OptionsButton = styled(RadioGroup.Item)`
     border: 1px solid;
     color: ${({theme}) => theme.colors["base-blue"]};
@@ -171,6 +173,8 @@ export const OptionsButton = styled(RadioGroup.Item)`
         color: ${({ theme }) => theme.colors["base-white"]};
         background: ${({theme}) => theme.colors["base-blue"]};
     }
+
+
 `
 
 export const Results = styled.div`
