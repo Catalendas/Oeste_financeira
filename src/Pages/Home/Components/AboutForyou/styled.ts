@@ -34,10 +34,18 @@ export const AboutForyouContainer = styled.div`
     }
 
     @media(max-width: 520px) {
+
         justify-content: center;
+
+        > div {
+            flex-direction: column;
+            gap: 0;
+        }
+
         h2 {
             font-size: 2rem;
         }
+
 
     }
 `
