@@ -64,7 +64,7 @@ export function RegisterModal({ range, rate}:RegisterModalProps) {
 
                 {!isSubmitSuccessful ? 
                     <div>
-                    <AlertDialog.Title>Cadastro de emprentimo</AlertDialog.Title>
+                    <AlertDialog.Title>Cadastro de emprestimo</AlertDialog.Title>
 
                     <form onSubmit={handleSubmit(handleRegister)}>
 
@@ -83,8 +83,8 @@ export function RegisterModal({ range, rate}:RegisterModalProps) {
                         <select {...register("Type")}>
                             <option value="">Selecione uma opção</option>
                             <option value="fgts">FGTS</option>
-                            <option value="credito consignado">Crédito sonsignado</option>
-                            <option value="cartao consignado">Cartão consignado</option>
+                            <option value="credito consignado">Crédito Consignado</option>
+                            <option value="cartao consignado">Cartão Consignado</option>
                             <option value="creditopessoal">Crédito Pessoal</option>
                         </select>
                         {errors && <p>{errors.Type?.message}</p>}

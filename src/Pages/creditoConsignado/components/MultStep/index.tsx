@@ -11,7 +11,7 @@ export function MultStep() {
                     <Option>
                        <div>
                         <h3>1. Escolha por onde prefere ser atendido</h3>
-                        <p>Se você é <strong>aposentado ou pensionista do INSS</strong>, aproveite nossas vantagens <strong>Contratando Online</strong>  agora mesmo! Se preferir, você pode contratar através do nosso <strong>WhatsApp</strong>. Se você é <strong>servidor público</strong>, ligue para <strong>, Ligue para 9993178152.</strong></p>
+                        <p>Se você é <strong>aposentado ou pensionista do INSS</strong>, aproveite nossas vantagens <strong>Contratando Online</strong>  agora mesmo! Se preferir, você pode contratar através do nosso <strong>WhatsApp</strong>. Se você é <strong>servidor público</strong>, ligue para <strong>, Ligue para 19994508753.</strong></p>
                         </div>
                     </Option>
                     <Option>

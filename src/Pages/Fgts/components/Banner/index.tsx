@@ -10,7 +10,7 @@ export function Banner() {
                 <BannerTitle>
                     <div>
                         <h2>Antecipação Saque Aniversário FGTS</h2>
-                        <span>Precisa de dinheiro? Com a antecipação do Saque-Aniversário você não compromete sua renda mensal e o dinheiro cai na conta via Pix.</span>
+                        <span>Precisa de dinheiro? Com a antecipação do Saque-Aniversário você não compromete sua renda mensal e o dinheiro cai na sua conta.</span>
                         <a target="_blank" href="https://wa.me/5519994508753"><SimulationButton icon={<WhatsappLogo size={30}/>} text="Falar com um especialista"  color="green" size={20}/></a>
                         <a target="_blank" href="https://contrate.oestecredemprestimos.com.br/"><SimulationButton text="Auto contratação"  color="blue-black" size={20}/></a>
                     </div>

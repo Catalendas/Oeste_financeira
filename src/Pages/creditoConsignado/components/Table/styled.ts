@@ -21,6 +21,7 @@ export const TableContainer = styled.table`
         align-items: center;
 
             td {
+                padding: 5px;
                 height: 2.5rem;
                 border-style: hidden;
                 display: flex;

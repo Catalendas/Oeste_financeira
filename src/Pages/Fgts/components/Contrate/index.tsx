@@ -14,27 +14,27 @@ export function Contrate() {
                 <ContrateOptions>
                     <ContrateOption>
                         <Check size={32} />
-                        <span><strong>Maior de 18 anos</strong>ou emancipado.</span>
+                        <span><strong>Maior de 18 anos </strong>ou emancipado.</span>
                     </ContrateOption>
 
                     <ContrateOption>
                         <Check size={32} />
-                        <span>Com<strong>situação regular</strong>com a Receita Federal.</span>
+                        <span>Com <strong>situação regular</strong> com a Receita Federal.</span>
                     </ContrateOption>
 
                     <ContrateOption>
                         <Check size={32} />
-                        <span>Que possua conta<strong>corrente</strong>ou<strong>poupança.</strong></span>
+                        <span>Que possua conta <strong>corrente</strong> ou <strong>poupança.</strong></span>
                     </ContrateOption>
 
                     <ContrateOption>
                         <Check size={32} />
-                        <span>Com saldo do FGTS em conta<strong>ativa</strong>ou<strong>inativa.</strong></span>
+                        <span>Com saldo do FGTS em conta <strong>ativa</strong> ou <strong>inativa.</strong></span>
                     </ContrateOption>
 
                     <ContrateOption>
                         <Check size={32} />
-                        <span>Optante da<strong>modalidade Saque-Aniversário</strong>do FGTS.</span>
+                        <span>Optante da <strong>modalidade Saque-Aniversário</strong> do FGTS.</span>
                     </ContrateOption>
 
                 </ContrateOptions>

@@ -6,15 +6,21 @@ export const AboutForyouContainer = styled.div`
     background-size: cover;
     width: 100%;
     height: 100%;
+
+
+
     display: flex;
     align-items: center;
     flex-direction: column;
+    
+
     padding: 2rem 0;
     font-size: 1.3rem;
 
     > div {
         display: flex;
-        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
     }
     
 
@@ -41,9 +47,10 @@ export const TextContainer = styled.div`
         margin-top: 1rem;
         display: flex;
         flex-direction: column;
-        width: 40rem;
+        width: 35rem;
         gap: 2rem;
         color: ${({ theme }) => theme.colors["base-white"]};
+
 
         svg {
             color: ${({ theme }) => theme.colors["base-white"]};
@@ -56,8 +63,8 @@ export const TextContainer = styled.div`
 `
 
 export const SimulationOptions = styled.div`
-    margin-top: 4rem;
-    width: 40rem;
+    margin-top: 7.1rem;
+    width: 35rem;
     
     > div {
         display: grid;

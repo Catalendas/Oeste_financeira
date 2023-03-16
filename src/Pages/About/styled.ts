@@ -57,6 +57,10 @@ export const AboutContent = styled.div`
             font-size: 2rem;
             color: ${({ theme }) => theme.colors["base-blue"]};
         }
+
+        p {
+            font-size: 1.2rem;
+        }
     }
 
     img {
@@ -79,3 +83,4 @@ export const AboutContent = styled.div`
         }
     }
 `
+

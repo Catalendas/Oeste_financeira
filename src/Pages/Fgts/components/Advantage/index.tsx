@@ -14,8 +14,8 @@ export function Advantage() {
                     <AdvantageOption>
                         
                         <CurrencyDollar size={32} />
-                        <strong>Taxas de 1,80% a.m.</strong>
-                        <span>Crédito pessoal com as melhores condições no mercado.</span>
+                        <strong>Taxas baixas.</strong>
+                        <span>Crédito com as melhores condições no mercado.</span>
                     </AdvantageOption>
 
                     <AdvantageOption>

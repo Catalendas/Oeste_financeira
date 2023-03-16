@@ -12,7 +12,7 @@ export function AutoContract() {
                 <h2>Faça a auto contratação online</h2>
                 <span><Check size={30}/>Rapido</span>
                 <span><Check size={30}/>Fácil</span>
-                <span><Check size={30}/>Sem</span>
+                <span><Check size={30}/>Sem Burocracia</span>
                 <a href="https://contrate.oestecredemprestimos.com.br/" target="_blank"><SimulationButton text="Seguir com auto contratação" color="blue" size={20}/> </a>
             </div>
 

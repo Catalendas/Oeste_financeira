@@ -10,7 +10,7 @@ export function Banner() {
                 <BannerTitle>
                     <div>
                         <h2>Empréstimo pessoal</h2>
-                        <span>Teve um imprevisto? Conte com a Oeste. É dinheiro na mão sem burocracia.</span>
+                        <span>Teve um imprevisto? Conte com a Oestecred. É dinheiro na mão sem burocracia.</span>
                         <a href="https://wa.me/5519994508753"><SimulationButton icon={<WhatsappLogo size={30}/>} text="Falar com um especialista"  color="green" size={20}/></a>
                     </div>
                 </BannerTitle>

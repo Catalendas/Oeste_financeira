@@ -1,5 +1,6 @@
-import { AboutContainer, AboutContent, CardContainer } from "./styled";
+import { AboutContainer, AboutContent, CardContainer, ImageContainer } from "./styled";
 import Team from "../../assets/Oeste.webp"
+import { Handshake, Money } from "phosphor-react";
 
 export function About() {
     return (
@@ -7,13 +8,16 @@ export function About() {
             
             <AboutContent>
                 <div>
-                    <h2>Quem somos nós</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum debitis delectus sapiente accusantium! Explicabo voluptas possimus impedit dolor recusandae dolore voluptatem repellat atque, ut molestiae numquam, velit ea at voluptates.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus non deserunt accusantium quis provident consequatur at, libero ratione doloribus obcaecati! Voluptatibus ullam quasi impedit incidunt vel magni. Dignissimos, quae at!</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam dolores hic, animi quaerat modi rerum quis sed iure accusamus molestias deleniti ea consequuntur odio maxime ullam quo optio cupiditate exercitationem?</p>
+                    <h2>NOSSA MISSÃO</h2>
+                    <p>Gerar valor e satisfazer nossos clientes, prezamos pela evolução de nossos colaboradores e parceiros, atingindo a excelência na maneira de atender e se relacionar como empresa.</p>
+
+                    <h2>Quem somos nós?</h2>
+                    <p>Fundada em 2007 a Oeste é uma empresa que atua no ramo imobiliário e também no mercado de empréstimo, ela atua na administração e intermediação de compra e venda de imóveis, a Oeste também é especializada em oferecer crédito descomplicado, rápido e fácil para nossos clientes, com as menores taxas do mercado.</p>
                 </div>
                 
-                <img src={Team} />
+                <div>
+                    <img src={Team} />
+                </div>
             </AboutContent>
 
             
