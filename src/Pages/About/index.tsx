@@ -1,4 +1,4 @@
-import { AboutContainer, AboutContent, CardContainer, ImageContainer } from "./styled";
+import { AboutContainer, AboutContent, CardContainer } from "./styled";
 import Team from "../../assets/Oeste.webp"
 import { Handshake, Money } from "phosphor-react";
 
